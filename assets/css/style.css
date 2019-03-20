@@ -1,0 +1,29 @@
+/******************************************FONTS START***************************************/
+@font-face {
+	font-family: 'HelveticaBold';
+	src: url('Helvetica/OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: 'HelveticaRegular';
+	src: url('Helvetica/OpenSans-Regular.ttf');	
+}
+/******************************************FONTS FINISH**************************************/
+
+/******************************************STATICS STYLE START*******************************/
+*{outline: none;}
+body{margin:0px;padding:0px}
+label{margin:0px;cursor:pointer}
+a{outline:none;text-decoration: none;color:inherit}
+a:hover{outline:none;text-decoration:none;color:inherit;background-color: transparent}
+a:focus{outline: none;text-decoration: none;color:inherit}
+p{margin:0px}
+ul{list-style-type:none;margin:0px;padding:0px}
+.clear:after{content:"";display:block;clear:both}
+.nopad{padding:0px}
+.nopadleft{padding-left:0px}
+.nopadright{padding-right:0px}
+.content{width: 1170px;margin: 0px auto}
+.bor{border:1px dotted green}
+/******************************************STATICS STYLE FINISH******************************/
+
+/******************************************STARTING STYLE :)*********************************/
