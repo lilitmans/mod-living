@@ -30,7 +30,7 @@ Class Controller implements renders{
 
     public function __construct()
     {
-        $this->baseurl =  "https://".$_SERVER['HTTP_HOST'];
+        $this->baseurl =  "http://".$_SERVER['HTTP_HOST'];
 
 
     }

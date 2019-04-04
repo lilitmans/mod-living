@@ -12,6 +12,9 @@ class Contact extends BaseController{
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
             if ($countRoute == 1 && $route[0] == 'contact') {
                 $this->index();
+            }else if($countRoute == 3 && $route[0] == 'contact' && $route[1] =="test" && is_numeric($route[2] ) ){
+
+                $this->index12();
             }
         }
 
@@ -26,9 +29,16 @@ class Contact extends BaseController{
     {
         $this->renderView("Pages/contact","contact", $this->result);
     }
+    public function index12()
+    {
+        $this->renderView("Pages/test","test", $this->result);
+    }
+
+
     private function contactMsg(){
         $mContactModel = new ContactModel();
         $mContactModel->_post=$_POST;
+        $_POST['name']="jhfghgfhg";
         $lastId = $mContactModel->insert();
         if($lastId){
             setcookie("ok_mes", '1', time()+5);

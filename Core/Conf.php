@@ -8,7 +8,7 @@
 
 
         function __construct() {
-            $this->base_url = "https://".$_SERVER['HTTP_HOST'];
+            $this->base_url = "http://".$_SERVER['HTTP_HOST'];
         }
     }
     

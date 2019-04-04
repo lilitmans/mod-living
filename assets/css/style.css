@@ -11,7 +11,7 @@
 
 /******************************************STATICS STYLE START*******************************/
 *{outline: none;}
-body{margin:0px;padding:0px}
+body{font-family: Sans-Serif; color: white;margin:0px;padding:0px}
 label{margin:0px;cursor:pointer}
 a{outline:none;text-decoration: none;color:inherit}
 a:hover{outline:none;text-decoration:none;color:inherit;background-color: transparent}
@@ -22,8 +22,492 @@ ul{list-style-type:none;margin:0px;padding:0px}
 .nopad{padding:0px}
 .nopadleft{padding-left:0px}
 .nopadright{padding-right:0px}
-.content{width: 1170px;margin: 0px auto}
+.content{width: 1200px;position: relative;margin: 0px auto;padding: 0 15px; box-sizing: border-box}
 .bor{border:1px dotted green}
 /******************************************STATICS STYLE FINISH******************************/
 
 /******************************************STARTING STYLE :)*********************************/
+.red-bg {
+    background-color: #ed3237 !important; /*pink-red*/
+}
+
+.btn-style {
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+/*....................header's styles....................*/
+header {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 10px 0 0 0;
+    z-index: 10;
+}
+
+header a:hover,
+header a:active {
+    color: white;
+}
+
+#header-block {
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 900;
+}
+
+.nav-item {
+    margin-right: 10px;
+}
+
+.nav-item:last-child {
+    margin-right: 0;
+}
+
+#logo-block {
+    height: 100%;
+}
+
+#logo {
+    width: 100%;
+    height: 100%;
+}
+
+#contact-info-block {
+    display: flex;
+    align-self: flex-end;
+}
+
+.phone-number-block {
+    display: flex;
+    align-items: center;
+    margin-right: 16px;
+}
+
+.phone-number-icon {
+    display: inline-block;
+    height: 16px;
+    margin-right: 10px;
+}
+
+.media-block {
+    margin-right: 10px;
+}
+
+.media-link {
+    padding-right: 2px;
+}
+
+.media-link:last-child {
+    padding-right: 0;
+}
+
+.other-features {
+    display: flex;
+    align-items: center;
+}
+
+.other-features-link {
+    margin-right: 4px;
+}
+
+.other-features-link:last-child {
+    margin-right: 0;
+}
+/*....................the end of header's styles....................*/
+
+
+/*....................search field....................*/
+
+#search-field-container {
+    position: relative;
+    background-image: url('../../assets/img/island.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 446px;
+}
+
+#search-field-container:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2f2f2f91;
+}
+
+#tour-sercher {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 150px;
+    font-style: italic;
+    width: 240px;
+    background-color: #6B7984ad; /*grey*/
+    padding: 15px;
+}
+
+.search-inputs {
+    width: 100px;
+    height: 12px;
+    font-style: italic;
+    padding: 7px;
+}
+.search-input-group:nth-child(odd)>.search-inputs {
+    margin-right: 3px;
+}
+
+.search-input-label {
+    position: absolute;
+    top: 2px;
+    left: 12px;
+    font-size: 12px;
+}
+
+.search-input-group {
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 5px;
+}
+
+#_search-submit {
+    width: 118px;
+    height: 28px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    background-color: #ed3237; /*pink-red*/
+    border: none;
+    font-style: italic;
+    color: white;
+}
+
+#main-title {
+    font-size: 45px;
+    float: right;
+    align-self: center;
+    margin-top: 90px;
+    text-align: end;
+}
+/*....................the end of search field....................*/
+
+/*....................popular tours....................*/
+#popular-tours-container {
+    margin: 28px 0;
+}
+
+#popular-tours {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.tour-item {
+    position: relative;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 24%;
+    height: 269px;
+    overflow: hidden;
+    border-radius: 4px;
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+
+.tour-item:before {
+    position: absolute;
+    content: '';
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #2f2f2f91;
+}
+
+.tour-item:nth-child(4n+4) {
+    margin-right: 0;
+}
+
+.tour-title-block.tour-item:before {
+    background-color: transparent;
+}
+
+.tour-info-block {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 15px 10px;
+    display: flex;
+    align-items: flex-start;
+}
+
+#tour-title-block {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.country-flag-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.country-flag {
+    height: 26px;
+    width: 26px;
+    margin-right: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.tour-country-img {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-name {
+    font-weight: 900;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.tour-img {
+    width: 100%;
+    height: 100%;
+}
+
+.tour-title {
+    color: #ed3237 !important; /*pink-red*/
+    font-size: 25px;
+    text-align: right;
+}
+
+.tour-arrow {
+    width: 18px;
+    padding-top: 38px;
+    padding-right: 20px;
+}
+
+.tour-left-arrow {
+    float: left;
+}
+/*....................the end of popular tours....................*/
+
+
+/*....................tour company....................*/
+.tour-company-info {
+    background-image: url('../../assets/img/tour-company-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 465px;
+}
+
+.tour-company-txt-block {
+    flex-direction: column;
+    justify-items: center;
+    margin: 0 auto;
+    width: 900px;
+    padding: 20px 0;
+}
+
+.tour-company-title {
+    font-size: 45px;
+}
+
+.tour-company-text {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+/*....................the end of tour company....................*/
+
+
+
+/*....................hot tours....................*/
+#hot-tours-container {
+    margin: 30px 0;
+}
+
+.hot-tour-item.tour-item:before {
+    background-color: transparent;
+}
+
+#hot-tour-title-block {
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+.hot-tour-main-title {
+    margin-bottom: 10px;
+}
+
+#hot-tours-icon {
+    width: 50px;
+    align-self: center;
+}
+
+.tour-right-arrow {
+    padding: 5px 0 0 10px;
+}
+
+.hot-tour-item {
+    height: 320px;
+}
+
+.hot-tour-item-img-block {
+    height: 180px;
+    overflow: hidden;
+}
+
+.hot-tour-item-img {
+    width: 100%;
+}
+
+.hot-tour-item-info-block {
+    padding: 10px 10px 0;
+}
+
+.hot-tour-title {
+    color: black;
+    font-size: 18px;
+    margin-bottom: 5px;
+    margin-top: 0;
+}
+
+.hot-tour-departure {
+    color: #AAAAAA;
+    font-size: 10px;
+    margin-bottom: 10px;
+}
+
+.hot-tour-stay-time {
+    display: flex;
+    align-items: center;
+    color: #6D6364;
+    font-size: 10px;
+    margin-bottom: 20px;
+}
+
+.time-icon {
+    margin-right: 5px;
+    width: 12px;
+}
+
+.hot-tour-btn {
+    width: 62px;
+}
+
+.get-hot-tour-block {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-top: 1px solid #f2f2f2;
+}
+
+.hot-tour-prise {
+    font-size: 25px;
+    color: #ed3237 !important; /*pink-red*/
+}
+/*....................the end of hot tours....................*/
+
+
+/*....................medical tours....................*/
+#medical-tours-container {
+    margin: 30px 0;
+}
+/*....................the end of medical tours....................*/
+
+
+/*....................our work's details....................*/
+#work-details-main-title {
+    color: #6D6364;
+    font-weight: 100;
+    font-size: 25px;
+    float: right;
+    margin-bottom: 0;
+}
+
+.air-balloons-img-container {
+    display: inline-block;
+}
+
+.air-balloons-img-container:after {
+    /*position: absolute;*/
+    /*content: "";*/
+    /*background-image: url('../../assets/img/pop-tour-map.jpg');*/
+    /*background-position: center;*/
+    /*background-size: cover;*/
+    /*height: 300px;*/
+    /*width: 200px;*/
+}
+
+#air-balloons-img {
+    width: 700px;
+}
+
+#our-work-details {
+    display: flex;
+    justify-content: space-between;
+}
+
+.work-details-block {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+}
+
+.work-details-txt-block>.work-details-title {
+    color: #6D6364;
+    font-size: 14px;
+    font-weight: 900;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.work-details-txt-block>.work-details-txt {
+    color: #AAAAAA;
+    font-size: 12px;
+    display: inline-block;
+    direction: rtl;
+}
+
+.work-details-block>span {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.work-details-icon {
+    width: 75px;
+}
+
+/*....................the end of our work's details....................*/

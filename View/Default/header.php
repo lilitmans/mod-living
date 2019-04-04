@@ -16,7 +16,42 @@
 	</head>
 	<body onload="time()">
 	<header>
-      
+<!--        <a href="--><?//=$baseurl?><!--/contact">contacty</a>-->
+<!--        <a href="--><?//=$baseurl?><!--/contact/test/1">contacty</a>-->
+        <div class="content" id="header-block">
+            <div id="logo-block">
+                <img id="logo" src="../../assets/img/logo-white.png" alt="Logo"/>
+            </div>
+            <nav id="navbar">
+                <div id="contact-info-block">
+                    <div class="phone-number-block">
+                        <span class="phone-number-icon"><img src="../assets/img/call.png"/></span>
+                        <a class="phone-number" href="#">+7(777)750-20-50</a>
+                    </div>
+                    <div class="media-block">
+                        <a class="media-link" href="#"><img src="../assets/img/fb.png"/></a>
+                        <a class="media-link" href="#"><img src="../assets/img/insta.png"/></a>
+                        <a class="media-link" href="#"><img src="../assets/img/tw.png"/></a>
+                        <a class="media-link" href="#"><img src="../assets/img/in.png"/></a>
+                    </div>
+
+                    <div class="other-features">
+                        <a class="other-features-link" href="#"><img src="../assets/img/search.png"/></a>
+                        <a class="other-features-link" href="#"><img src="../assets/img/heart.png"/></a>
+                        <a class="other-features-link" href="#"><img src="../assets/img/user.png"/></a>
+                    </div>
+                </div>
+
+                <ul id="nav-list">
+                    <?php foreach ($params["nav-items"] as $item) {?>
+                    <li class="nav-item">
+                        <a id="<?=$item["id"]?>" class="nav-link" href="#"><?=$item["name"]?></a>
+                    </li>
+                    <?php }; ?>
+                </ul>
+            </nav>
+        </div>
+
     </header>
 
 
