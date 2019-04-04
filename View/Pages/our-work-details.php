@@ -1,6 +1,6 @@
 <section>
     <div id="our-work-details-container">
-        <div id="our-work-details" class="content bor">
+        <div id="our-work-details" class="content">
             <div class="air-balloons-img-container">
                 <img id="air-balloons-img" src="../assets/img/air-balloon.png" alt="Air Baloons"/>
             </div>

@@ -23,27 +23,33 @@ class Mains extends BaseController{
         $this->result["nav-items"] = [
             [
                 "id"    => 0,
-                "name"  => "Поиск тура"
+                "name"  => "Поиск тура",
+                "route"  => ""
             ],
             [
                 "id"    => 1,
-                "name"  => "Индивидуальные туры"
+                "name"  => "Индивидуальные туры",
+                "route"  => ""
             ],
             [
                 "id"    => 2,
-                "name"  => "Медицинский туризм"
+                "name"  => "Медицинский туризм",
+                "route"  => ""
             ],
             [
                 "id"    => 3,
-                "name"  => "Туры по Казахстану"
+                "name"  => "Туры по Казахстану",
+                "route"  => ""
             ],
             [
                 "id"    => 4,
-                "name"  => "Обучение за рубежом"
+                "name"  => "Обучение за рубежом",
+                "route"  => "tours-in-kazakhstan"
             ],
             [
                 "id"    => 5,
-                "name"  => "Контакты"
+                "name"  => "Контакты",
+                "route"  => ""
             ]
         ];
 
@@ -207,6 +213,101 @@ class Mains extends BaseController{
                 "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
                                 magna aliqua.",
                 "icon"      => "../assets/img/online-payment.png"
+            ]
+        ];
+
+        $this->result["best-directions"] =[
+            [
+                "title"     => "Нур-Султан",
+                "img"       => "../assets/img/nur-sultan.jpg"
+            ],
+            [
+                "title"     => "Алматы",
+                "img"       => "../assets/img/almaty.jpg"
+            ],
+            [
+                "title"     => "Шымбулак",
+                "img"       => "../assets/img/shimbulak.jpg"
+            ],
+            [
+                "title"     => "Кольсайские озера",
+                "img"       => "../assets/img/kolsayskie-ozyora.jpg"
+            ],
+            [
+                "title"     => "Байконур",
+                "img"       => "../assets/img/baykonur.jpg"
+            ],
+            [
+                "title"     => "Аральское море",
+                "img"       => "../assets/img/aralskoe-more.jpg"
+            ],
+            [
+                "title"     => "Катон-Карагай",
+                "img"       => "../assets/img/katon-karagay.jpg"
+            ],
+            [
+                "title"     => "Мавзолей Карахан",
+                "img"       => "../assets/img/mavzoley-karakhan.jpg"
+            ]
+        ];
+
+        $this->result["last-news"] =[
+            [
+                "img"           => "../assets/img/last-news1.jpg",
+                "date"          => date("F, Y"),
+                "day"           => date("d"),
+                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "comments"      => 15,
+                "review"        => 20
+            ],
+            [
+                "img"           => "../assets/img/last-news2.jpg",
+                "date"          => date("F, Y"),
+                "day"           => date("d"),
+                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "comments"      => 6,
+                "review"        => 10
+            ],
+            [
+                "img"           => "../assets/img/last-news3.jpg",
+                "date"          => date("F, Y"),
+                "day"           => date("d"),
+                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "comments"      => 21,
+                "review"        => 50
+            ]
+        ];
+
+        $this->result["footer-company-data"] =[
+            [
+                "icon"      => "../assets/img/location-icon.png",
+                "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201"
+            ],
+            [
+                "icon"      => "../assets/img/phone-icon.png",
+                "data"      => "8(600) 040-20-65"
+            ],
+            [
+                "icon"      => "../assets/img/envelope-icon.png",
+                "data"      => "info@detour.kz"
+            ]
+        ];
+
+        $this->result["footer-data"] =[
+            [
+                "title"         => "Страны",
+                "items"         => ["Дания", "Эстония", "Эфиопия", "Израиль", "Монако", "Тунис", "Украина"],
+                "see-all"  => "страны"
+            ],
+            [
+                "title"         => "Гостиницы",
+                "items"         => ["Казжол", "Гранд отель Тянь-Шань", "Гостиница Достык", "Ритц-Карлтон Алматы",
+                                    "Марриот Астана", "Интерконтиненталь Алматы", "Парк Инн от Радиссон Астана"],
+                "see-all"  => "гостиницы"
+            ],
+            [
+                "title"         => "Информация",
+                "items"         => ["О компании", "Услуги", "Блог", "Как купить?", "Публичная оферта"]
             ]
         ];
 

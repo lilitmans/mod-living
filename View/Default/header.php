@@ -1,3 +1,5 @@
+<?php define("TITLE", "The Ville Tourne")?>
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -19,8 +21,8 @@
 <!--        <a href="--><?//=$baseurl?><!--/contact">contacty</a>-->
 <!--        <a href="--><?//=$baseurl?><!--/contact/test/1">contacty</a>-->
         <div class="content" id="header-block">
-            <div id="logo-block">
-                <img id="logo" src="../../assets/img/logo-white.png" alt="Logo"/>
+            <div class="logo-block">
+                <img class="logo" src="../../assets/img/logo-white.png" alt="Logo"/>
             </div>
             <nav id="navbar">
                 <div id="contact-info-block">
@@ -45,7 +47,7 @@
                 <ul id="nav-list">
                     <?php foreach ($params["nav-items"] as $item) {?>
                     <li class="nav-item">
-                        <a id="<?=$item["id"]?>" class="nav-link" href="#"><?=$item["name"]?></a>
+                        <a id="<?=$item["id"]?>" class="nav-link" href="<?=$baseurl/$item["route"]?>"><?=$item["name"]?></a>
                     </li>
                     <?php }; ?>
                 </ul>
