@@ -27,7 +27,6 @@ Class Controller implements renders{
                  );
     protected $CatsArray = array();
 
-
     public function __construct()
     {
         $this->baseurl =  "http://".$_SERVER['HTTP_HOST'];

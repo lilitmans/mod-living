@@ -17,7 +17,7 @@
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 	</head>
 	<body onload="time()">
-	<header>
+	<header class="<?=$page=='main'?'homeHeade':'header'?>">
 <!--        <a href="--><?//=$baseurl?><!--/contact">contacty</a>-->
 <!--        <a href="--><?//=$baseurl?><!--/contact/test/1">contacty</a>-->
         <div class="content" id="header-block">
