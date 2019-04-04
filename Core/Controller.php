@@ -21,9 +21,9 @@ Class Controller implements renders{
     protected $bagCount;
     protected $likeCount;
     public $seo = array(
-                        'title'=>'AAMFOS',
-                        'desc'=>'AAMFOS',
-                        'key'=>'AAMFOS'
+                        'title'=>'Detour.kz',
+                        'desc'=>'Detour',
+                        'key'=>'Detour'
                  );
     protected $CatsArray = array();
 

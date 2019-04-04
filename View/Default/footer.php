@@ -55,8 +55,7 @@
         <div id="copy-right-info-block" class="content">
             <span>&copy; <?= TITLE; ?>, <?= date("Y"); ?></span>
             <div id="development-info">
-                <p>Дизайн: STUDIO NOMAD</p>
-                <p>Разработка: MSconstruct</p>
+                <p>Дизайн и Разработка сайта : STUDIO NOMAD</p>
             </div>
         </div>
     </div>
