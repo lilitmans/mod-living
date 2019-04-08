@@ -86,7 +86,7 @@
         </div>
     </div>
 </section>
-<section id="hot-tours-container">
+<section id="hot-tours-container" class="main-content">
     <div id="hot-tours" class="content">
         <?php for($hotTour=0; $hotTour<count($params["hot-tours"]); ++$hotTour) {
             if($hotTour == 0) {?>
@@ -103,22 +103,22 @@
                     </a>
                 </div>
             <?php }else {?>
-                <div class="tour-item tour-item-with-title-block hot-tour-item">
+                <div class="tour-item tour-item-with-title-block tour-item-border hot-tour-item">
                     <a class="tour-info-link absolute-tour-info-link" href="#">
                         <div class="tour-item-img-block">
-                            <img class="hot-tour-item-img" src="<?= $params["hot-tours"][$hotTour]["img"]; ?>" alt="<?= $params["hot-tours"][$hotTour]["country"]; ?>" />
+                            <img class="tour-item-img" src="<?= $params["hot-tours"][$hotTour]["img"]; ?>" alt="<?= $params["hot-tours"][$hotTour]["country"]; ?>" />
                         </div>
                         <div class="tour-item-info-block">
-                            <h3 class="hot-tour-title"><?= $params["hot-tours"][$hotTour]["country"]; ?></h3>
-                            <p class="hot-tour-departure">Вылет: <?= $params["hot-tours"][$hotTour]["departure"]; ?></p>
+                            <h3 class="tour-item-info-title"><?= $params["hot-tours"][$hotTour]["country"]; ?></h3>
+                            <p class="tour-departure">Вылет: <?= $params["hot-tours"][$hotTour]["departure"]; ?></p>
                             <p class="tour-info">
                                 <img class="time-icon" src="../assets/img/clock-circular-outline.png" alt="Time">
                                 <?= $params["hot-tours"][$hotTour]["nights"]; ?> ночей
                                 <?= $params["hot-tours"][$hotTour]["days"]; ?> дней
                             </p>
-                            <div class="get-hot-tour-block">
+                            <div class="get-tour-block">
                                 <button class="red-bg btn-style hot-tour-btn">Купить</button>
-                                <p class="hot-tour-prise"><?= $params["hot-tours"][$hotTour]["price"]; ?>
+                                <p class="tour-prise"><?= $params["hot-tours"][$hotTour]["price"]; ?>
                                     <img src="../assets/img/kz-currency.png">
                                 </p>
                             </div>
@@ -128,7 +128,7 @@
             <?php } };?>
     </div>
 </section>
-<section id="medical-tours-container">
+<section id="medical-tours-container" class="main-content">
     <div id="medical-tours" class="content">
         <?php for($tours=0; $tours<count($params["medical-tours"]); ++$tours) {?>
 
@@ -181,9 +181,9 @@
 </section>
 <section id="best-directions-container">
     <div id="best-directions" class="content">
-        <h3 id="best-directions-main-title" class="blocks-main-title">Лучшие направления по Казахстану</h3>
+        <h3 class="blocks-main-title centered-title">Лучшие направления по Казахстану</h3>
         <?php foreach ($params["best-directions"] as $tours) {?>
-            <div class="tour-item tour-item-without-title-block">
+            <div class="tour-item tour-item-without-title-block best-directions-item">
                 <img class="tour-country-img" src="<?= $tours["img"]; ?>" alt="<?= $tours["title"]; ?>"/>
                 <a class="-tour-info-link" href="#">
                     <div class="tour-info-block centered-tour-info-block">

@@ -4,15 +4,15 @@ use Core\Controller as BaseController;
 
 
 
-class ToursInKazakhstan extends BaseController{
+class SearchTours extends BaseController{
 
     public function __construct($route , $countRoute)
     {
         parent::__construct();
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
-            if ($countRoute == 1 && $route[0] == 'tours-in-kazakhstan' ) {
+            if ($countRoute == 1 && $route[0] == 'search-tour') {
                 $this->index();
-            }else if($countRoute == 2 && $route[1] == 'tours-in-kazakhstan' && $route[0] == 'search-tour'){
+            }else if($countRoute == 2 && $route[0] == 'tours-in-kazakhstan' && $route[1] == 'search-tour'){
 
                 $this->index12();
             }
@@ -201,6 +201,6 @@ class ToursInKazakhstan extends BaseController{
             ]
         ];
 
-        $this->renderView("Pages/tours-in-kazakhstan","tours-in-kazakhstan", $this->result);
+        $this->renderView("Pages/search-tour","search-tour", $this->result);
     }
 }

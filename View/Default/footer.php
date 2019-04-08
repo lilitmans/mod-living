@@ -2,13 +2,13 @@
     <div id="footer-info-main-container" class="content">
         <div id="company-info" class="footer-info-block">
             <div id="footer-logo-block">
-                <img class="logo" src="../assets/img/colored-logo.png" alt="Logo"/>
+                <img class="logo" src="<?=$baseurl?>/assets/img/colored-logo.png" alt="Logo"/>
             </div>
             <div class="footer-info">
                 <?php foreach ($params["footer-company-data"] as $data){?>
                 <div class="footer-info-str">
                      <span class="footer-info-icon">
-                        <img src="<?=$data["icon"]; ?>" />
+                        <img src="<?=$baseurl?>/<?=$data["icon"]; ?>" />
                      </span>
                     <span><?=$data["data"]; ?></span>
                 </div>

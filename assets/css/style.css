@@ -11,7 +11,7 @@
 
 /******************************************STATICS STYLE START*******************************/
 *{outline: none;}
-body{font-family: Sans-Serif; color: white;margin:0px;padding:0px}
+body{font-family: Sans-Serif; color: #6D6364;margin:0px;padding:0px}
 label{margin:0px;cursor:pointer}
 a{outline:none;text-decoration: none;color:inherit}
 a:hover{outline:none;text-decoration:none;color:inherit;background-color: transparent}
@@ -38,24 +38,38 @@ button {cursor: pointer;}
     padding: 5px 10px;
     border-radius: 4px;
 }
+
+.bordered-btn {
+    border: 1px solid #ed3237; /*pink-red*/
+    color: #ed3237; /*pink-red*/
+    background-color: white;
+    border-radius: 4px;
+    padding: 5px 20px;
+}
+
+.main-content {
+    margin: 30px auto;
+}
+
 /*....................header's styles....................*/
-.homeHeade {
+.homeHeader {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
     z-index: 10;
 }
 
-.homeHeade a:hover,
-.homeHeade a:active {
+.homeHeader a:hover,
+.homeHeader a:active {
     color: white;
 }
 
 .header{
     background: #ed3237;
-    padding: 10px 0 0 0;
+    padding: 10px 0;
+    box-shadow: 0 1px 5px 1px #aaaaaa;
 }
 
 #header-block {
@@ -74,6 +88,7 @@ button {cursor: pointer;}
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
+    color: white;
 }
 
 .nav-link {
@@ -107,6 +122,7 @@ button {cursor: pointer;}
     display: flex;
     align-items: center;
     margin-right: 16px;
+    color: white;
 }
 
 .phone-number-icon {
@@ -206,6 +222,7 @@ button {cursor: pointer;}
     top: 2px;
     left: 12px;
     font-size: 12px;
+    color: white;
 }
 
 .search-input-group {
@@ -231,6 +248,7 @@ button {cursor: pointer;}
     align-self: center;
     margin-top: 90px;
     text-align: end;
+    color: white;
 }
 /*....................the end of search field....................*/
 
@@ -269,6 +287,10 @@ button {cursor: pointer;}
 
 .tour-item:nth-child(4n+4).tour-item-with-title-block {
     margin-right: 0;
+}
+
+.tour-item-border {
+    border: 1px solid #f2f2f2;
 }
 
 .tour-title-block.tour-item:before {
@@ -315,6 +337,7 @@ button {cursor: pointer;}
     font-size: 25px;
     line-height: 1;
     text-align: center;
+    color: white;
 }
 
 .tour-img {
@@ -356,21 +379,19 @@ button {cursor: pointer;}
 
 .tour-company-title {
     font-size: 45px;
+    color: white;
 }
 
 .tour-company-text {
     font-size: 20px;
     margin-bottom: 0;
+    color: white;
 }
 /*....................the end of tour company....................*/
 
 
 
 /*....................hot tours....................*/
-#hot-tours-container {
-    margin: 30px 0;
-}
-
 .hot-tour-item.tour-item:before {
     background-color: transparent;
 }
@@ -403,7 +424,7 @@ button {cursor: pointer;}
     overflow: hidden;
 }
 
-.hot-tour-item-img {
+.tour-item-img {
     width: 100%;
 }
 
@@ -411,14 +432,13 @@ button {cursor: pointer;}
     padding: 10px 10px 0;
 }
 
-.hot-tour-title {
-    color: black;
+.tour-item-info-title {
     font-size: 18px;
     margin-bottom: 5px;
     margin-top: 0;
 }
 
-.hot-tour-departure {
+.tour-departure {
     color: #AAAAAA;
     font-size: 10px;
     margin-bottom: 10px;
@@ -427,7 +447,6 @@ button {cursor: pointer;}
 .tour-info {
     display: flex;
     align-items: center;
-    color: #6D6364;
     font-size: 10px;
     margin-bottom: 20px;
 }
@@ -441,14 +460,14 @@ button {cursor: pointer;}
     width: 62px;
 }
 
-.get-hot-tour-block {
+.get-tour-block {
     display: flex;
     justify-content: space-between;
     padding: 10px 0;
     border-top: 1px solid #f2f2f2;
 }
 
-.hot-tour-prise {
+.tour-prise {
     font-size: 25px;
     color: #ed3237 !important; /*pink-red*/
 }
@@ -456,10 +475,6 @@ button {cursor: pointer;}
 
 
 /*....................medical tours....................*/
-#medical-tours-container {
-    margin: 30px 0;
-}
-
 .medical-tour-arrow {
     padding-top: 16px;
 }
@@ -472,7 +487,6 @@ button {cursor: pointer;}
 }
 
 #work-details-main-title {
-    color: #6D6364;
     font-weight: 100;
     font-size: 25px;
     float: right;
@@ -514,7 +528,6 @@ button {cursor: pointer;}
 }
 
 .work-details-txt-block>.work-details-title {
-    color: #6D6364;
     font-size: 14px;
     font-weight: 900;
     display: inline-block;
@@ -546,7 +559,7 @@ button {cursor: pointer;}
     font-size: 25px;
 }
 
-#best-directions-main-title {
+.centered-title {
     text-align: center;
 }
 
@@ -560,7 +573,7 @@ button {cursor: pointer;}
     justify-content: center;
 }
 
-.tour-item-without-title-block {
+.best-directions-item {
     height: 370px;
 }
 
@@ -568,7 +581,7 @@ button {cursor: pointer;}
     background-color: transparent;
 }
 
-.tour-item:nth-child(4n+5).tour-item-without-title-block {
+.tour-item:nth-child(4n+5).best-directions-item {
     margin-right: 0;
 }
 /*....................the end of best directions....................*/
@@ -604,6 +617,10 @@ button {cursor: pointer;}
     background-color: transparent;
 }
 
+.tour-description-block {
+    margin-top: 30px;
+}
+
 .tour-description-text {
     color: #6D6364;
     font-size: 12px;
@@ -633,6 +650,7 @@ button {cursor: pointer;}
     width: 40px;
     background-color: #ed32378f; /*pink-red*/
     z-index: 20;
+    color: white;
 }
 
 .publication-day {
@@ -644,21 +662,424 @@ button {cursor: pointer;}
 }
 /*....................the end of last news....................*/
 
+/*....................search tours....................*/
+#search-tours-container {
+    margin-top: 20px;
+}
+
+.flex-container {
+    display: flex;
+}
+
+.side-bar {
+    width: 100px;
+    margin-right: 20px;
+    flex-grow: 1;
+}
+
+.side-bar-menu {
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+}
+
+.navigation {
+    color: #aaaaaa;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.sidebar-menu-list {
+    padding: 10px;
+}
+
+.sidebar-menu-list-item {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 10px;
+}
+
+.sidebar-menu-list-item:last-child {
+    border: none;
+}
+
+.sidebar-menu-list-item-link {
+    color: #aaaaaa;
+}
+
+.sidebar-menu-list-item-link:hover,
+.sidebar-menu-list-item-link:active,
+.sidebar-menu-list-item-link:focus {
+    color: #aaaaaa;
+}
+
+#search-tours {
+    flex-grow: 3;
+}
+
+.tour-item:nth-child(3n+3).search-tour-item {
+    margin-right: 0;
+}
+
+.search-tour-item {
+    width: 32%;
+    height: 330px;
+}
+
+.price-txt {
+    font-size: 16px;
+}
+
+.search-tour-prise {
+    width: 100%;
+    text-align: end;
+}
+
+.btn-block {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.filters-block {
+    margin: 5px 0;
+}
+
+.filter-label {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+#filters-title {
+    margin: 20px 0 10px;
+    font-size: 20px;
+}
+/*....................the end of search tours....................*/
+
+
+/*....................tours details....................*/
+.tour-details-block {
+    flex-grow: 3;
+}
+
+.slideshow {
+    position: relative;
+    height: 483px;
+    overflow: hidden;
+}
+
+.slideshow-main-img-block {
+    width: 100%;
+    height: calc(100% - 50px);
+    overflow: hidden;
+}
+
+.slideshow-main-img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slideshow-images-block {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    background-color: maroon;
+}
+
+.side-bar-right {
+    margin-right: 0;
+    margin-left: 20px;
+    min-width: 300px;
+}
+
+.tour-details-side-bar-menu {
+    padding: 10px;
+}
+
+.tour-details-price-block {
+    border: 1px solid #ed3237; /*pink-red*/
+    background-color: white;
+    padding: 10px 20px;
+    margin: 0 0 5px 0;
+}
+
+.tour-details-price-block:nth-child(2) {
+    margin: 0 0 20px 0;
+}
+
+.tour-details-price-desc {
+    font-size: 12px;
+    width: 100%;
+}
+
+.tour-details-prise {
+    font-size: 16px;
+    float: right;
+}
+
+.tour-details-price-currency {
+    height: 10px;
+}
+
+.select-value-block {
+    display: inline-block;
+    background: white;
+    font-size: 14px;
+    flex: 1;
+    width: 48%;
+}
+
+.select-value-block:first-child {
+    float: left;
+    margin-right: 5px;
+}
+
+.select-value-block:last-child {
+    float: right;
+    margin-left: 5px;
+}
+
+.select-value-desc {
+    color: #6D6364;
+    margin-bottom: 10px;
+}
+
+.select-value {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    border: 1px solid #aaaaaa;
+}
+
+.change-value-block {
+    border: 1px solid #f2f2f2;
+    color: #aaaaaa;
+    height: 20px;
+    width: 17px;
+    flex-grow: 1;
+    text-align: center;
+    padding-top: 3px;
+}
+
+.change-value-block:hover {
+    cursor: pointer;
+}
+
+.selected-value {
+    flex-grow: 3;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.select-tour-date-block {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.tour-date {
+    border: 1px solid #AAAAAA;
+    padding: 10px;
+    color: #AAAAAA;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    box-sizing: border-box;
+    width: 32%;
+}
+
+.tour-date:nth-child(3n+3) {
+    margin-right: 0;
+}
+
+.tour-date:hover {
+    border: 1px solid #6D6364;
+    color: #6D6364;
+}
+
+.selected-date {
+    border: 1px solid #6D6364;
+    color: #6D6364;
+    font-weight: 900;
+    font-size: 10px;
+}
+
+.total-sum-container {
+    margin-top: 30px;
+}
+
+.total-sum-title {
+    text-align: center;
+    font-weight: 900;
+}
+
+.total-price {
+    font-size: 20px;
+}
+
+.total-price-currency {
+    height: 12px;
+}
+
+.tour-details-btn {
+    padding: 5px 60px;
+    margin-bottom: 10px;
+}
+
+.tour-description {
+    position: relative;
+    padding-bottom: 5px;
+    color: #6D6364;
+    font-size: 18px;
+    font-weight: 900;
+    margin: 20px 0;
+}
+
+.tour-description:after {
+    position: absolute;
+    content: '';
+    width: 80px;
+    height: 2px;
+    background-color: #ed3237; /*pink-red*/
+    bottom: 0;
+    left: 0;
+}
+
+.tour-full-programm-title {
+    display: inline-block;
+    color: #6D6364;
+    font-weight: 900;
+    font-size: 14px;
+}
+
+.tour-full-programm-day {
+    color: #ed3237; /*pink-red*/
+}
+
+.see-more-btn-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 23px;
+    width: 23px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    border-radius: 50px;
+    background-color: #aaaaaa6e;
+    float: right;
+    cursor: pointer;
+
+}
+
+.see-more-btn-icon {
+    height: 10px;
+    padding-left: 2px;
+}
+
+.tour-full-programm-day-blcok {
+    border-bottom: 1px solid #f2f2f2;
+    padding: 20px;
+}
+
+.tour-description-txt {
+    color: #aaaaaa;
+    font-size: 14px;
+}
+
+.tour-full-programm-day-title-block {
+    cursor: pointer;
+}
+
+.tour-full-programm-more-desc {
+    padding: 10px 50px 10px 10px;
+    font-size: 12px;
+    display: none;
+}
+
+.opened-desc {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ed3237; /*pink-red*/
+    cursor: pointer;
+}
+.opened-desc > img {
+    transform: rotate(-270deg);
+}
+
+.similar-tour-item {
+    width: 32%;
+    height: 330px;
+}
+
+.tour-item:nth-child(4n+4).similar-tour-item {
+    margin-right: 0;
+    width: 32%;
+}
+
+/*....................the end of tours details....................*/
+
+
+/*....................tours in Kazakhstan....................*/
+.title-with-map-container {
+    text-align: center;
+}
+
+.title-with-map {
+    position: relative;
+    display: inline-block;
+}
+
+.title-with-map:after {
+    position: absolute;
+    content: '';
+    width: 100px;
+    height: 100px;
+    background-image: url(../../assets/img/pop-tour-map.jpg);
+    background-position: center;
+    background-size: contain;
+    bottom: -24px;
+    left: 80px;
+    z-index: -1;
+}
+
+.select-tour-date-container {
+    margin-top: 20px;
+}
+
+.select-tour-date-title {
+    position: relative;
+    color: #ed3237; /*pink-red*/
+    font-size: 16px;
+    font-weight: 900;
+    padding-bottom: 10px;
+}
+
+.select-tour-date-title:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    content: '';
+    height: 2px;
+    width: 65px;
+    background: #aaaaaa;
+}
+/*....................the end of tours in Kazakhstan....................*/
+
 
 /*....................footer....................*/
 
 footer {
     border-top: 1px solid #ed3237; /*pink-red*/
-    margin-top: 20px;
+    color: white;
+    margin: 30px auto 0;
 }
 
 #footer-info-main-container {
     display: flex;
     padding: 10px 0;
-}
-
-#company-info {
-
 }
 
 #footer-logo-block {
@@ -763,3 +1184,5 @@ footer {
     display: inline-block;
 }
 /*....................the end of footer....................*/
+
+

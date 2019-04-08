@@ -22,34 +22,34 @@ class Mains extends BaseController{
 
         $this->result["nav-items"] = [
             [
-                "id"    => 0,
-                "name"  => "Поиск тура",
-                "route"  => ""
+                "id"            => 0,
+                "name"          => "Поиск тура",
+                "item-route"    => "search-tour"
             ],
             [
-                "id"    => 1,
-                "name"  => "Индивидуальные туры",
-                "route"  => ""
+                "id"            => 1,
+                "name"          => "Индивидуальные туры",
+                "item-route"    => "individualnye-tury"
             ],
             [
-                "id"    => 2,
-                "name"  => "Медицинский туризм",
-                "route"  => ""
+                "id"            => 2,
+                "name"          => "Медицинский туризм",
+                "item-route"    => "medicinskie-tury"
             ],
             [
-                "id"    => 3,
-                "name"  => "Туры по Казахстану",
-                "route"  => ""
+                "id"            => 3,
+                "name"          => "Туры по Казахстану",
+                "item-route"    => "toury-po-kazakhstanu"
             ],
             [
-                "id"    => 4,
-                "name"  => "Обучение за рубежом",
-                "route"  => "tours-in-kazakhstan"
+                "id"            => 4,
+                "name"          => "Обучение за рубежом",
+                "item-route"    => "obuchenie-za-rubejom"
             ],
             [
-                "id"    => 5,
-                "name"  => "Контакты",
-                "route"  => ""
+                "id"            => 5,
+                "name"          => "Контакты",
+                "item-route"    => "a"
             ]
         ];
 
@@ -276,6 +276,85 @@ class Mains extends BaseController{
                 "comments"      => 21,
                 "review"        => 50
             ]
+        ];
+
+        $this->result["search-tours"] =[
+            [
+                "img"       => "../assets/img/germany.jpg",
+                "country"   => "Германия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "../assets/img/italy.jpg",
+                "country"   => "Италия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "../assets/img/dubay.jpg",
+                "country"   => "Дубай",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "../assets/img/sri-lanka-statues.jpg",
+                "country"   => "Шри-Ланка",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "../assets/img/estonia.jpg",
+                "country"   => "Эстония",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "../assets/img/ispaniya.jpg",
+                "country"   => "Испания",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ]
+        ];
+
+        $this->result["sidebar-filters"] =[
+            [
+                "filter-name"   => "Фильтр 1"
+            ],
+            [
+                "filter-name"   => "Фильтр 2"
+            ],
+            [
+                "filter-name"   => "Фильтр 3"
+            ],
+            [
+                "filter-name"   => "Фильтр 4"
+            ],
+            [
+                "filter-name"   => "Фильтр 5"
+            ],
+            [
+                "filter-name"   => "Фильтр 6"
+            ],
+            [
+                "filter-name"   => "Фильтр 7"
+            ],
+            [
+                "filter-name"   => "Фильтр 8"
+            ]
+
         ];
 
         $this->result["footer-company-data"] =[
