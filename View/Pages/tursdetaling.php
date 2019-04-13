@@ -9,7 +9,7 @@
                             <li class="sidebar-menu-list-item">
                                 <a class="sidebar-menu-list-item-link" href="#"><?=$dir["title"]?></a>
                             </li>
-                        <?php}?>
+                        <?php } ?>
                     </ul>
                 </div>
 
@@ -49,7 +49,7 @@
                             </div>
                         </a>
                     </div>
-                <?php  };?>
+                <?php  }?>
                 <div class="btn-block">
                     <button class="bordered-btn">Показать остальные</button>
                 </div>

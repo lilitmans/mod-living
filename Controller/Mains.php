@@ -24,7 +24,7 @@ class Mains extends BaseController{
             [
                 "id"            => 0,
                 "name"          => "Поиск тура",
-                "item-route"    => "search-tour"
+                "item-route"    => ""
             ],
             [
                 "id"            => 1,

@@ -27,17 +27,17 @@
 <!--                </a>-->
 <!--            --><?php //} ?>
 <!--        --><?php //} ?>
-        <li class='header'>Main Menu</li>
-        <a href='<?= $baseurl ?>/contact/'>
+        <li class='header'>Меню</li>
+        <a href='<?= $baseurl ?>/categores/'>
             <li class="menuli">
-                <i class="inline_menu fa fa-comment <?= $page == 'contact' ? "active_i" : "" ?>" aria-hidden="true"></i>
-                <span class="menu_text inline_menu <?= $page == 'contact' ? "active_span_menu" : "" ?>">Contact Message's</span>
+                <i class="inline_menu fa fa-comment <?= $page == 'categores' ? "active_i" : "" ?>" aria-hidden="true"></i>
+                <span class="menu_text inline_menu <?= $page == 'categores' ? "active_span_menu" : "" ?>">Категория</span>
             </li>
         </a>
-        <a href='<?= $baseurl ?>/users/'>
+        <a href='<?= $baseurl ?>/subcategores/'>
             <li class="menuli">
-                <i class="inline_menu fa fa-comment <?= $page == 'users' ? "active_i" : "" ?>" aria-hidden="true"></i>
-                <span class="menu_text inline_menu <?= $page == 'users' ? "active_span_menu" : "" ?>">Users</span>
+                <i class="inline_menu fa fa-comment <?= $page == 'sub-categores' ? "active_i" : "" ?>" aria-hidden="true"></i>
+                <span class="menu_text inline_menu <?= $page == 'sub-categores' ? "active_span_menu" : "" ?>">Подкатегория</span>
             </li>
         </a>
 
