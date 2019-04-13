@@ -47,7 +47,7 @@
                 <ul id="nav-list">
                     <?php foreach ($params["nav-items"] as $item) {?>
                     <li class="nav-item">
-                        <a id="<?=$item["id"]?>" class="nav-link" href="<?=$baseurl?>/tours/<?=$item["item-route"]?>"><?=$item["name"]?></a>
+                        <a id="<?=$item["id"]?>" class="nav-link" href="<?=$baseurl?>/<?=$item["item-route"]?>"><?=$item["name"]?></a>
                     </li>
                     <?php }; ?>
                 </ul>

@@ -29,22 +29,22 @@ class Mains extends BaseController{
             [
                 "id"            => 1,
                 "name"          => "Индивидуальные туры",
-                "item-route"    => "individualnye-tury"
+                "item-route"    => "tours/individualnye-tury"
             ],
             [
                 "id"            => 2,
                 "name"          => "Медицинский туризм",
-                "item-route"    => "medicinskie-tury"
+                "item-route"    => "tours/medicinskie-tury"
             ],
             [
                 "id"            => 3,
                 "name"          => "Туры по Казахстану",
-                "item-route"    => "toury-po-kazakhstanu"
+                "item-route"    => "tours/toury-po-kazakhstanu"
             ],
             [
                 "id"            => 4,
                 "name"          => "Обучение за рубежом",
-                "item-route"    => "obuchenie-za-rubejom"
+                "item-route"    => "tours/obuchenie-za-rubejom"
             ],
             [
                 "id"            => 5,
