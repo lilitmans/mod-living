@@ -8,6 +8,20 @@ function changeValue(val, sign) {
 }
 
 $(document).ready(function() {
+
+    var windowHeigth = $(window).height();
+    var bodyHeight = $("body").height();
+
+    if(bodyHeight < windowHeigth) {
+        $("body").css({
+            'height': windowHeigth
+        })
+        $('footer').addClass('footer-absolute');
+    }else {
+        $('footer').removeClass('footer-absolute');
+    }
+
+
     $(".add-value").click(function() {
         let val = $(this).parent().find(".selected-value").html();
         let cangedVal = changeValue(val, "+");

@@ -10,23 +10,40 @@ class Contact extends BaseController{
     {
         parent::__construct();
         if($_SERVER['REQUEST_METHOD'] == 'GET') {
-            if ($countRoute == 1 && $route[0] == 'contact') {
-                $this->index();
-            }else if($countRoute == 3 && $route[0] == 'contact' && $route[1] =="test" && is_numeric($route[2] ) ){
-
-                $this->index12();
+            if ($countRoute == 2 && $route[0] == 'tours' && $route[1] == 'contact') {
+                $this->index($route[1]);
             }
         }
 
-        if($_SERVER['REQUEST_METHOD'] == 'POST'){
-            if ($countRoute == 1 && $route[0] == 'contact') {
-                $this->contactMsg();
-            }
-        }
+//        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+//            if ($countRoute == 1 && $route[0] == 'contact') {
+//                $this->contactMsg();
+//            }
+//        }
     }
 
     public function index()
     {
+        $this->result["company-data"] =[
+            [
+                "icon"      => "location-icon.png",
+                "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201",
+                "number"    => "01",
+                "type"      => "Адрес"
+            ],
+            [
+                "icon"      => "phone-icon.png",
+                "data"      => "8(600) 040-20-65",
+                "number"    => "02",
+                "type"      => "Номер телефона"
+            ],
+            [
+                "icon"      => "envelope-icon.png",
+                "data"      => "info@detour.kz",
+                "number"    => "03",
+                "type"      => "Почтовый адрес"
+            ]
+        ];
         $this->renderView("Pages/contact","contact", $this->result);
     }
     public function index12()
@@ -45,6 +62,6 @@ class Contact extends BaseController{
         }else{
             setcookie("err_mes", '2', time()+5);
         }
-        header('Location:'.$this->baseurl.'/contact');
+        header('Location:'.$this->baseurl.'/tours/contact');
     }
 }

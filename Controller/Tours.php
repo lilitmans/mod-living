@@ -51,7 +51,7 @@ class Tours extends BaseController{
             [
                 "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "a"
+                "item-route"    => "contact"
             ]
         ];
          $this->result["footer-data"] =[
@@ -242,7 +242,7 @@ class Tours extends BaseController{
             [
                 "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "a"
+                "item-route"    => "contact"
             ]
         ];
          $this->result["footer-data"] =[
@@ -262,6 +262,7 @@ class Tours extends BaseController{
                 "items"         => ["О компании", "Услуги", "Блог", "Как купить?", "Публичная оферта"]
             ]
         ];
+
         $this->result["footer-company-data"] =[
             [
                 "icon"      => "../assets/img/location-icon.png",
@@ -276,6 +277,28 @@ class Tours extends BaseController{
                 "data"      => "info@detour.kz"
             ]
         ];
+
+        $this->result["company-data"] =[
+            [
+                "icon"      => "location-icon.png",
+                "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201",
+                "number"    => "01",
+                "type"      => "Адрес"
+            ],
+            [
+                "icon"      => "phone-icon.png",
+                "data"      => "8(600) 040-20-65",
+                "number"    => "02",
+                "type"      => "Номер телефона"
+            ],
+            [
+                "icon"      => "envelope-icon.png",
+                "data"      => "info@detour.kz",
+                "number"    => "03",
+                "type"      => "Почтовый адрес"
+            ]
+        ];
+
         $this->result["best-directions"] =[
             [
                 "title"     => "Нур-Султан",
@@ -420,10 +443,10 @@ class Tours extends BaseController{
             [
                 "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "a"
+                "item-route"    => "contacty"
             ]
         ];
-           $this->result["footer-data"] =[
+          $this->result["footer-data"] =[
             [
                 "title"         => "Страны",
                 "items"         => ["Дания", "Эстония", "Эфиопия", "Израиль", "Монако", "Тунис", "Украина"],
@@ -440,6 +463,7 @@ class Tours extends BaseController{
                 "items"         => ["О компании", "Услуги", "Блог", "Как купить?", "Публичная оферта"]
             ]
         ];
+
         $this->result["footer-company-data"] =[
             [
                 "icon"      => "../assets/img/location-icon.png",
@@ -454,6 +478,7 @@ class Tours extends BaseController{
                 "data"      => "info@detour.kz"
             ]
         ];
+
          $this->result["search-tours"] =[
             [
                 "img"       => "assets/img/germany.jpg",
