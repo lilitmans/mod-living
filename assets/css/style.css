@@ -25,7 +25,7 @@ ul{list-style-type:none;margin:0px;padding:0px}
 .content{width: 1200px;position: relative;margin: 0px auto;padding: 0 15px; box-sizing: border-box}
 .bor{border:1px dotted green}
 button {cursor: pointer;}
-section {min-height: 450px;}
+section {min-height: 420px;}
 textarea {resize: none;}
 /******************************************STATICS STYLE FINISH******************************/
 
@@ -679,10 +679,6 @@ textarea {resize: none;}
 /*....................the end of last news....................*/
 
 /*....................search tours....................*/
-#search-tours-container {
-    margin-top: 20px;
-}
-
 .flex-container {
     display: flex;
 }
@@ -694,15 +690,16 @@ textarea {resize: none;}
 }
 
 .side-bar-menu {
-    border: 1px solid #f2f2f2;
+    /*border: 1px solid #f2f2f2;*/
     border-radius: 4px;
     box-shadow: 0 0 5px 1px #aaaaaa;
+    height: fit-content;
 }
 
 .navigation {
     color: #aaaaaa;
     font-size: 14px;
-    margin-bottom: 20px;
+    margin: 20px 0;
 }
 
 .sidebar-menu-list {
@@ -770,6 +767,7 @@ textarea {resize: none;}
     font-size: 20px;
 }
 /*....................the end of search tours....................*/
+
 
 
 /*....................tours details....................*/
@@ -1132,7 +1130,8 @@ textarea {resize: none;}
 .inputs-block {
     display: flex;
     flex-direction: column;
-    max-width: 290px;
+    flex: 1;
+    max-width: 340px;
 }
 
 .login-block {
@@ -1147,6 +1146,15 @@ textarea {resize: none;}
 .privacy-policy-info {
     font-size: 10px;
     color: #AAAAAA;
+}
+
+.login-btn {
+    margin-bottom: 10px;
+}
+
+.forgot-pass {
+    color: #AAAAAA;
+    font-size: 10px;
 }
 /*....................the end of login registration....................*/
 
@@ -1177,7 +1185,7 @@ textarea {resize: none;}
 }
 
 .contact-message-input {
-    background: #f2f2f2;
+    background: #F9F9F9;
     border: 1px solid #aaaaaa;
     padding: 10px;
     margin-bottom: 5px;
@@ -1276,6 +1284,169 @@ textarea {resize: none;}
     font-size: 30px;
 }
 /*....................the end of contacts....................*/
+
+/*....................services....................*/
+.services-navigation {
+    padding: 20px 0 10px;
+    color: #AAAAAA;
+    font-size: 14px;
+}
+
+.service-block {
+    display: flex;
+    margin-top: 20px;
+}
+
+.services-img-block {
+    /*display: flex;*/
+    /*justify-content: center;*/
+    overflow: hidden;
+    height: 400px;
+    flex: 1;
+    text-align: center;
+    border: 1px solid #6D6364;
+}
+
+.services-img {
+    width: 100%;
+}
+
+.service-description-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1;
+}
+
+.service-description-block-left {
+    margin-right: 20px;
+    align-items: flex-end;
+}
+
+.service-description-block-right {
+    margin-left: 20px;
+}
+
+.service-description-block-left >
+.service-description-txt {
+    text-align: right;
+}
+
+.service-title {
+    margin: 0 0 30px 0;
+    color: #ed3237; /*pink-red*/
+    font-size: 25px;
+}
+
+.service-description-txt {
+    color: #aaaaaa;
+    font-size: 14px;
+    width: 70%;
+}
+/*....................the end of services....................*/
+
+
+/*....................account settings....................*/
+#account-settings-main-block {
+    display: flex;
+    margin-top: 30px;
+}
+
+.account-settings-field {
+    flex: 1;
+    border-radius: 4px;
+    box-shadow: 0 0 5px 1px #aaaaaa;
+    margin-left: 20px;
+    height: 316px;
+}
+
+.account-settings-title {
+    margin: 0;
+    padding: 15px;
+    color: #ed3237; /*pink-red*/
+    font-size: 22px;
+}
+
+.sidebar-menu-list-nopadd {
+    padding: 10px 0;
+}
+
+.account-settings-menu-list-item {
+    border: none;
+    padding: 0 20px;
+    margin: 10px 0 20px;
+    border-right: 2px solid transparent;
+    border-left: 2px solid transparent;
+    cursor: pointer;
+}
+
+.sidebar-menu-list-item.account-settings-menu-list-item:last-child {
+    border-left: 2px solid transparent;
+    border-right: 2px solid transparent;
+}
+
+.account-settings-menu-list-item:hover,
+.sidebar-menu-list-item.account-settings-menu-list-item:last-child:hover {
+    border-left: 2px solid #ed3237; /*pink-red*/
+    border-right: 2px solid #ed3237; /*pink-red*/
+    cursor: pointer;
+}
+
+.account-settings-menu-list-item:hover > a {
+    color: #ed3237; /*pink-red*/
+}
+
+.active-list-item {
+    border-left: 2px solid #ed3237 !important; /*pink-red*/
+    border-right: 2px solid #ed3237 !important; /*pink-red*/
+}
+
+.active-list-item-link {
+    color: #ed3237 !important; /*pink-red*/
+}
+
+.account-settings-section {
+    padding: 15px 15px 10px;
+    display: none;
+}
+
+.open {
+    display: block;
+}
+
+#account-settings-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.account-settings-input {
+    background: #F9F9F9;
+    border: 1px solid #aaaaaa;
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.account-settings-inputs {
+    flex: 1;
+}
+
+.account-settings-inputs:last-child {
+    margin-left: 7.5px;
+}
+
+.account-settings-inputs:first-child {
+    margin-right: 7.5px;
+}
+
+.account-settings-btn {
+    float: right;
+}
+
+/*....................the end of account settings....................*/
+
 
 /*....................footer....................*/
 

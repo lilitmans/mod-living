@@ -7,7 +7,8 @@
                     <div class="inputs-block login-block">
                         <input class="login-registr-input" type="text" name="login" placeholder="Ваш логин"/>
                         <input class="login-registr-input" type="password" name="registr-password" placeholder="Пароль"/>
-                        <button class="red-bg-btn">Войти</button>
+                        <button class="red-bg-btn login-btn">Войти</button>
+                        <a href="#" class="forgot-pass">Забыли пароль?</a>
                     </div>
 
                 </form>
@@ -18,7 +19,7 @@
                     <div class="inputs-block registr-block">
                         <input class="login-registr-input" type="text" name="name" placeholder="Имя"/>
                         <input class="login-registr-input" type="text" name="surname" placeholder="Фамилия"/>
-                        <input class="login-registr-input" type="email" name="email" placeholder="Почтовый адрес"/>
+                        <input class="login-registr-input" type="number" name="postal-cde" placeholder="Почтовый адрес"/>
                         <p class="privacy-policy-info">Нажимая на кноку, вы даете согласие на обработку персональных данных и соглашаетесь с политикой
                             <a class="red-txt" href="#">конфиденциальности</a>
                         </p>

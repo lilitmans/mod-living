@@ -18,4 +18,3 @@
         <button class="bordered-btn">Показать остальные</button>
     </div>
 </section>
-

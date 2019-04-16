@@ -49,4 +49,23 @@ $(document).ready(function() {
         }
 
     });
+
+    $('.account-settings-menu-list-item').click(function() {
+        var accountSettingsContent = $('.account-settings-section');
+        var data = $(this).attr('data');
+
+        $(this).parent().children('.account-settings-menu-list-item').removeClass('active-list-item');
+        $(this).addClass('active-list-item');
+
+        $(this).parent().children('.account-settings-menu-list-item').children().removeClass('active-list-item-link');
+        $(this).children().addClass('active-list-item-link');
+
+        for(var i=0; i<accountSettingsContent.length; i++) {
+            if(data == i) {
+                $(accountSettingsContent[i]).addClass('open');
+            }else {
+                $(accountSettingsContent[i]).removeClass('open');
+            }
+        }
+    });
 });

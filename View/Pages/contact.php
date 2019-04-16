@@ -11,7 +11,7 @@
             <form id="contacts-message-form" method="post" action="">
                 <input class="contact-message-input" type="text" name="name" placeholder="Имя"/>
                 <input class="contact-message-input" type="text" name="surname" placeholder="Фамилия"/>
-                <input class="contact-message-input" type="email" name="email" placeholder="Почтовый адрес"/>
+                <input class="contact-message-input" type="number" name="postal-code" placeholder="Почтовый адрес"/>
                 <input class="contact-message-input" type="number" name="phone-number" placeholder="Телефон"/>
                 <textarea class="contact-message-input" type="text" name="message" rows="7" placeholder="Сообшение"></textarea>
                 <button type="submit" class="bordered-btn contact-message-btn">Отправить</button>
