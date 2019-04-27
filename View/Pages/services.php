@@ -1,6 +1,6 @@
 <section id="services-container">
     <div id="services-main-block" class="content">
-        <p class="navigation">Главная/<b>Услуги</b></p>
+        <p class="block-title">Услуги</p>
         <div class="service-block">
             <div class="services-img-block">
                 <img class="services-img" src="<?=$baseurl?>/assets/img/austria.jpg" alt="Services"/>

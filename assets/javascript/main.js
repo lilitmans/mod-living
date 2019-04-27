@@ -68,4 +68,9 @@ $(document).ready(function() {
             }
         }
     });
+
+    $('.single-service-menu-list-item').click(function() {
+        $(this).parent().find('.sidebar-menu-list-item-link').removeClass('changeColor');
+        $(this).children('.sidebar-menu-list-item-link').toggleClass('changeColor');
+    });
 });

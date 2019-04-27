@@ -22,39 +22,39 @@ class Tours extends BaseController{
 
     public function index($urls)
     {
-           $this->result["nav-items"] = [
+        $this->result["nav-items"] = [
             [
                 "id"            => 0,
-                "name"          => "Поиск тура",
-                "item-route"    => ""
+                "name"          => "Подбор тура",
+                "item-route"    => "",
+                "img"           => "earth"
             ],
             [
                 "id"            => 1,
-                "name"          => "Индивидуальные туры",
-                "item-route"    => "tours/individualnye-tury"
+                "name"          => "Все туры",
+                "item-route"    => "",
+                "img"           => "suitcase"
             ],
             [
                 "id"            => 2,
-                "name"          => "Медицинский туризм",
-                "item-route"    => "tours/medicinskie-tury"
+                "name"          => "Туры по Казахстану",
+                "item-route"    => "tours/toury-po-kazakhstanu",
+                "img"           => "sun-bird"
             ],
             [
                 "id"            => 3,
-                "name"          => "Туры по Казахстану",
-                "item-route"    => "tours/toury-po-kazakhstanu"
+                "name"          => "Туристам",
+                "item-route"    => "",
+                "img"           => "tourist"
             ],
             [
                 "id"            => 4,
-                "name"          => "Обучение за рубежом",
-                "item-route"    => "tours/obuchenie-za-rubejom"
-            ],
-            [
-                "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "contact"
+                "item-route"    => "contact",
+                "img"           => "contact"
             ]
         ];
-         $this->result["footer-data"] =[
+        $this->result["footer-data"] =[
             [
                 "title"         => "Страны",
                 "items"         => ["Дания", "Эстония", "Эфиопия", "Израиль", "Монако", "Тунис", "Украина"],
@@ -73,19 +73,19 @@ class Tours extends BaseController{
         ];
         $this->result["footer-company-data"] =[
             [
-                "icon"      => "../assets/img/location-icon.png",
+                "icon"      => "location-icon",
                 "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201"
             ],
             [
-                "icon"      => "../assets/img/phone-icon.png",
+                "icon"      => "phone-icon",
                 "data"      => "8(600) 040-20-65"
             ],
             [
-                "icon"      => "../assets/img/envelope-icon.png",
+                "icon"      => "envelope-icon",
                 "data"      => "info@detour.kz"
             ]
         ];
-         $this->result["search-tours"] =[
+        $this->result["search-tours"] =[
             [
                 "img"       => "germany.jpg",
                 "country"   => "Германия",
@@ -129,6 +129,72 @@ class Tours extends BaseController{
             [
                 "img"       => "ispaniya.jpg",
                 "country"   => "Испания",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ]
+        ];
+        $this->result["hot-tours"] =[
+            [
+                "img"       => "germany",
+                "country"   => "Германия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "italy",
+                "country"   => "Италия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "dubay",
+                "country"   => "Дубай",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "sri-lanka-statues",
+                "country"   => "Шри-Ланка",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "estonia",
+                "country"   => "Эстония",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "ispaniya",
+                "country"   => "Испания",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "germany",
+                "country"   => "Германия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "italy",
+                "country"   => "Италия",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
                 "days"      => 4,
@@ -214,34 +280,29 @@ class Tours extends BaseController{
 
     public function ToursDetaling()
     {
-          $this->result["nav-items"] = [
+        $this->result["nav-items"] = [
             [
                 "id"            => 0,
-                "name"          => "Поиск тура",
-                "item-route"    => "search-tour"
+                "name"          => "Подбор тура",
+                "item-route"    => ""
             ],
             [
                 "id"            => 1,
-                "name"          => "Индивидуальные туры",
-                "item-route"    => "individualnye-tury"
+                "name"          => "Все туры",
+                "item-route"    => ""
             ],
             [
                 "id"            => 2,
-                "name"          => "Медицинский туризм",
-                "item-route"    => "medicinskie-tury"
+                "name"          => "Туры по Казахстану",
+                "item-route"    => "tours/toury-po-kazakhstanu"
             ],
             [
                 "id"            => 3,
-                "name"          => "Туры по Казахстану",
-                "item-route"    => "toury-po-kazakhstanu"
+                "name"          => "Туристам",
+                "item-route"    => ""
             ],
             [
                 "id"            => 4,
-                "name"          => "Обучение за рубежом",
-                "item-route"    => "obuchenie-za-rubejom"
-            ],
-            [
-                "id"            => 5,
                 "name"          => "Контакты",
                 "item-route"    => "contact"
             ]
@@ -266,15 +327,15 @@ class Tours extends BaseController{
 
         $this->result["footer-company-data"] =[
             [
-                "icon"      => "../assets/img/location-icon.png",
+                "icon"      => "location-icon",
                 "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201"
             ],
             [
-                "icon"      => "../assets/img/phone-icon.png",
+                "icon"      => "phone-icon",
                 "data"      => "8(600) 040-20-65"
             ],
             [
-                "icon"      => "../assets/img/envelope-icon.png",
+                "icon"      => "envelope-icon",
                 "data"      => "info@detour.kz"
             ]
         ];
@@ -415,36 +476,36 @@ class Tours extends BaseController{
         $this->renderView("Pages/tursdetaling","tursdetaling", $this->result);
     }
     public function InfoTours(){
-          $this->result["nav-items"] = [
+        $this->result["nav-items"] = [
             [
                 "id"            => 0,
-                "name"          => "Поиск тура",
-                "item-route"    => "search-tour"
+                "name"          => "Подбор тура",
+                "item-route"    => "",
+                "img"           => "earth"
             ],
             [
                 "id"            => 1,
-                "name"          => "Индивидуальные туры",
-                "item-route"    => "individualnye-tury"
+                "name"          => "Все туры",
+                "item-route"    => "",
+                "img"           => "suitcase"
             ],
             [
                 "id"            => 2,
-                "name"          => "Медицинский туризм",
-                "item-route"    => "medicinskie-tury"
+                "name"          => "Туры по Казахстану",
+                "item-route"    => "tours/toury-po-kazakhstanu",
+                "img"           => "sun-bird"
             ],
             [
                 "id"            => 3,
-                "name"          => "Туры по Казахстану",
-                "item-route"    => "toury-po-kazakhstanu"
+                "name"          => "Туристам",
+                "item-route"    => "",
+                "img"           => "tourist"
             ],
             [
                 "id"            => 4,
-                "name"          => "Обучение за рубежом",
-                "item-route"    => "obuchenie-za-rubejom"
-            ],
-            [
-                "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "contacty"
+                "item-route"    => "contact",
+                "img"           => "contact"
             ]
         ];
           $this->result["footer-data"] =[

@@ -1,3 +1,4 @@
+
 <section id="account-settings-container">
     <div id="account-settings-main-block" class="content">
         <div class="side-bar-menu">
@@ -20,7 +21,7 @@
             </ul>
         </div>
         <div class="account-settings-field">
-            <h4 class="account-settings-title">Настройки аккаунта</h4>
+            <p class="block-title">Кабинет туриста</p>
             <div class="account-settings-section clear">
                 Мои туры
             </div>

@@ -23,87 +23,82 @@ class Mains extends BaseController{
         $this->result["nav-items"] = [
             [
                 "id"            => 0,
-                "name"          => "Поиск тура",
-                "item-route"    => ""
+                "name"          => "Подбор тура",
+                "item-route"    => "",
+                "img"           => "earth"
             ],
             [
                 "id"            => 1,
-                "name"          => "Индивидуальные туры",
-                "item-route"    => "tours/individualnye-tury"
+                "name"          => "Все туры",
+                "item-route"    => "",
+                "img"           => "suitcase"
             ],
             [
                 "id"            => 2,
-                "name"          => "Медицинский туризм",
-                "item-route"    => "tours/medicinskie-tury"
+                "name"          => "Туры по Казахстану",
+                "item-route"    => "tours/toury-po-kazakhstanu",
+                "img"           => "sun-bird"
             ],
             [
                 "id"            => 3,
-                "name"          => "Туры по Казахстану",
-                "item-route"    => "tours/toury-po-kazakhstanu"
+                "name"          => "Туристам",
+                "item-route"    => "",
+                "img"           => "tourist"
             ],
             [
                 "id"            => 4,
-                "name"          => "Обучение за рубежом",
-                "item-route"    => "tours/obuchenie-za-rubejom"
-            ],
-            [
-                "id"            => 5,
                 "name"          => "Контакты",
-                "item-route"    => "contact"
+                "item-route"    => "contact",
+                "img"           => "contact"
             ]
         ];
 
         $this->result["popular-tours"] =[
             [
                 "country"   =>  "Доминикана",
-                "flag"      => "../assets/img/countrys-flag/png/dominican-republic.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/beach.jpg"
             ],
             [
                 "country"   =>  "Оман",
-                "flag"      => "../assets/img/countrys-flag/png/oman.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/oblique-shore.jpg"
             ],
             [
                 "country"   =>  "Индия",
-                "flag"      => "../assets/img/countrys-flag/png/india.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/india.jpg"
             ],
             [
-                "name"      => "tours",
-                "text"      => "Популярные<br />направления<br />зарубежных&nbsp;туров",
-                "img"       => "../assets/img/pop-tour-map.jpg"
+                "country"   =>  "Доминикана",
+                "flag"      => "flag",
+                "img"       => "../assets/img/beach.jpg"
             ],
             [
                 "country"   =>  "Молдавия",
-                "flag"      => "../assets/img/countrys-flag/png/moldova.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/moldova.jpg"
             ],
             [
                 "country"   =>  "ОАЭ",
-                "flag"      => "../assets/img/countrys-flag/png/united-arab-emirates.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/united-arab-emirates.jpg"
             ],
             [
                 "country"   =>  "Таиланд",
-                "flag"      => "../assets/img/countrys-flag/png/thailand.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/thailand.jpg"
             ],
             [
                 "country"   =>  "Шри-Ланка",
-                "flag"      => "../assets/img/countrys-flag/png/sri-lanka.png",
+                "flag"      => "flag",
                 "img"       => "../assets/img/sri-lanka.jpg"
             ],
         ];
 
         $this->result["hot-tours"] =[
             [
-                "name"      => "tours",
-                "text"      => "Горящие туры",
-                "img"       => "../assets/img/pop-tour-map.jpg"
-            ],
-            [
-                "img"       => "../assets/img/germany.jpg",
+                "img"       => "germany",
                 "country"   => "Германия",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
@@ -111,7 +106,7 @@ class Mains extends BaseController{
                 "price"     => "700.300"
             ],
             [
-                "img"       => "../assets/img/italy.jpg",
+                "img"       => "italy",
                 "country"   => "Италия",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
@@ -119,7 +114,7 @@ class Mains extends BaseController{
                 "price"     => "700.300"
             ],
             [
-                "img"       => "../assets/img/dubay.jpg",
+                "img"       => "dubay",
                 "country"   => "Дубай",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
@@ -127,7 +122,7 @@ class Mains extends BaseController{
                 "price"     => "700.300"
             ],
             [
-                "img"       => "../assets/img/sri-lanka-statues.jpg",
+                "img"       => "sri-lanka-statues",
                 "country"   => "Шри-Ланка",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
@@ -135,7 +130,7 @@ class Mains extends BaseController{
                 "price"     => "700.300"
             ],
             [
-                "img"       => "../assets/img/estonia.jpg",
+                "img"       => "estonia",
                 "country"   => "Эстония",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
@@ -143,8 +138,24 @@ class Mains extends BaseController{
                 "price"     => "700.300"
             ],
             [
-                "img"       => "../assets/img/ispaniya.jpg",
+                "img"       => "ispaniya",
                 "country"   => "Испания",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "germany",
+                "country"   => "Германия",
+                "departure" => "19.04.2019",
+                "nights"    => 3,
+                "days"      => 4,
+                "price"     => "700.300"
+            ],
+            [
+                "img"       => "italy",
+                "country"   => "Италия",
                 "departure" => "19.04.2019",
                 "nights"    => 3,
                 "days"      => 4,
@@ -155,64 +166,61 @@ class Mains extends BaseController{
         $this->result["medical-tours"] =[
             [
                 "country"   =>  "Израиль",
-                "flag"      => "../assets/img/countrys-flag/png/israel.png",
-                "img"       => "../assets/img/israel.jpg"
+                "flag"      => "flag",
+                "img"       => "israel"
             ],
             [
                 "country"   =>  "Германия",
-                "flag"      => "../assets/img/countrys-flag/png/germany.png",
-                "img"       => "../assets/img/germany2.jpg"
+                "flag"      => "flag",
+                "img"       => "germany2"
             ],
             [
                 "country"   =>  "Австрия",
-                "flag"      => "../assets/img/countrys-flag/png/austria.png",
-                "img"       => "../assets/img/austria.jpg"
-            ],
-            [
-                "name"      => "tours",
-                "text"      => "Медицинские<br />туры",
-                "img"       => "../assets/img/pop-tour-map.jpg"
+                "flag"      => "flag",
+                "img"       => "austria"
             ],
             [
                 "country"   =>  "Финляндия",
-                "flag"      => "../assets/img/countrys-flag/png/finland.png",
-                "img"       => "../assets/img/helsinki.jpg"
+                "flag"      => "flag",
+                "img"       => "helsinki"
             ],
             [
                 "country"   =>  "Латвия",
-                "flag"      => "../assets/img/countrys-flag/png/latvia.png",
-                "img"       => "../assets/img/latviа.jpg"
+                "flag"      => "flag",
+                "img"       => "latviа"
+            ],
+            [
+                "country"   =>  "Латвия",
+                "flag"      => "flag",
+                "img"       => "latviа"
             ],
             [
                 "country"   =>  "Южная Корея",
-                "flag"      => "../assets/img/countrys-flag/png/south-korea.png",
-                "img"       => "../assets/img/south-korea.jpg"
+                "flag"      => "flag",
+                "img"       => "south-korea"
             ],
             [
                 "country"   =>  "Китай",
-                "flag"      => "../assets/img/countrys-flag/png/china.png",
-                "img"       => "../assets/img/china.jpg"
+                "flag"      => "flag",
+                "img"       => "china"
             ]
         ];
 
         $this->result["work-details"] =[
             [
                 "title"     => "Регистрация в системе",
-                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.",
-                "icon"      => "../assets/img/sistem-registration.png"
+                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. ",
+                "icon"      => "system-registration-icon"
             ],
             [
                 "title"     => "Подбор тура",
-                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.",
-                   "icon"      => "../assets/img/tour-selection.png"
+                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. ",
+                   "icon"      => "tour-selection-icon"
             ],
             [
                 "title"     => "Онлайн оплата",
-                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                                magna aliqua.",
-                "icon"      => "../assets/img/online-payment.png"
+                "text"      => "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. ",
+                "icon"      => "online-payment-icon"
             ]
         ];
 
@@ -256,7 +264,7 @@ class Mains extends BaseController{
                 "img"           => "../assets/img/last-news1.jpg",
                 "date"          => date("F, Y"),
                 "day"           => date("d"),
-                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description"   => "Какие туры искали росияне в Яндексе этой зимой",
                 "comments"      => 15,
                 "review"        => 20
             ],
@@ -264,7 +272,7 @@ class Mains extends BaseController{
                 "img"           => "../assets/img/last-news2.jpg",
                 "date"          => date("F, Y"),
                 "day"           => date("d"),
-                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description"   => "Таиланд открыл бесплатную онлайн-академию для турагентов",
                 "comments"      => 6,
                 "review"        => 10
             ],
@@ -272,7 +280,7 @@ class Mains extends BaseController{
                 "img"           => "../assets/img/last-news3.jpg",
                 "date"          => date("F, Y"),
                 "day"           => date("d"),
-                "description"   => "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+                "description"   => "В Турции строят один из самых дорогих отелей на Средиземноморье",
                 "comments"      => 21,
                 "review"        => 50
             ]
@@ -359,15 +367,15 @@ class Mains extends BaseController{
 
         $this->result["footer-company-data"] =[
             [
-                "icon"      => "../assets/img/location-icon.png",
+                "icon"      => "location-icon",
                 "data"      => "РК, 050026, г. Алматы, <br/>Гоголя 201"
             ],
             [
-                "icon"      => "../assets/img/phone-icon.png",
+                "icon"      => "phone-icon",
                 "data"      => "8(600) 040-20-65"
             ],
             [
-                "icon"      => "../assets/img/envelope-icon.png",
+                "icon"      => "envelope-icon",
                 "data"      => "info@detour.kz"
             ]
         ];

@@ -18,36 +18,35 @@
 	</head>
 	<body onload="time()">
 	<header class="<?=$page=='main'?'homeHeader':'header'?>">
-<!--        <a href="--><?//=$baseurl?><!--/contact">contacty</a>-->
-<!--        <a href="--><?//=$baseurl?><!--/contact/test/1">contacty</a>-->
         <div class="content" id="header-block">
             <div class="logo-block">
-                <a href="<?=$baseurl?>"><img class="logo" src="<?=$baseurl?>/assets/img/logo-white.png" alt="Logo"/></a>
+                <a class="logo-link" href="<?=$baseurl?>"><img class="logo" src="<?=$baseurl?>/assets/i/logo.png" alt="Logo"/></a>
             </div>
             <nav id="navbar">
                 <div id="contact-info-block">
                     <div class="phone-number-block">
-                        <span class="phone-number-icon"><img src="<?=$baseurl?>/assets/img/call.png"/></span>
+                        <span class="phone-number-icon-block"><img class="phone-number-icon" src="<?=$baseurl?>/assets/i/call.png"/></span>
                         <a class="phone-number" href="#">+7(777)750-20-50</a>
                     </div>
                     <div class="media-block">
-                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/img/fb.png"/></a>
-                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/img/insta.png"/></a>
-                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/img/tw.png"/></a>
-                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/img/in.png"/></a>
+                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/i/facebook.png"/></a>
+                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/i/instagram.png"/></a>
+                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/i/twitter.png"/></a>
+                        <a class="media-link" href="#"><img src="<?=$baseurl?>/assets/i/linkedin.png"/></a>
                     </div>
 
-                    <div class="other-features">
-                        <a class="other-features-link" href="#"><img src="<?=$baseurl?>/assets/img/search.png"/></a>
-                        <a class="other-features-link" href="#"><img src="<?=$baseurl?>/assets/img/heart.png"/></a>
-                        <a class="other-features-link" href="#"><img src="<?=$baseurl?>/assets/img/user.png"/></a>
+                    <div class="cabinet-block">
+                        <a class="cabinet-link" href="#"><img class="user-icon" src="<?=$baseurl?>/assets/i/user.png"/>
+                        Кабинет туриста</a>
                     </div>
                 </div>
 
                 <ul id="nav-list">
                     <?php foreach ($params["nav-items"] as $item) {?>
-                    <li class="nav-item">
-                        <a id="<?=$item["id"]?>" class="nav-link" href="<?=$baseurl?>/<?=$item["item-route"]?>"><?=$item["name"]?></a>
+                    <li id="<?=$item["id"]?>" class="nav-item">
+                        <a class="nav-link" href="<?=$baseurl?>/<?=$item["item-route"]?>">
+                            <img class="nav-item-icon" src="<?=$baseurl?>/assets/i/<?=$item["img"]?>.png" alt="<?=$item["img"]?>"/>
+                            <?=$item["name"]?></a>
                     </li>
                     <?php }; ?>
                 </ul>

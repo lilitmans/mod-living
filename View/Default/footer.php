@@ -2,17 +2,17 @@
     <div id="footer-info-main-container" class="content">
         <div id="company-info" class="footer-info-block">
             <div id="footer-logo-block">
-                <img class="logo" src="<?=$baseurl?>/assets/img/colored-logo.png" alt="Logo"/>
+                <img class="logo" src="<?=$baseurl?>/assets/i/logo.png" alt="Logo"/>
             </div>
             <div class="footer-info">
                 <?php foreach ($params["footer-company-data"] as $data){?>
                 <div class="footer-info-str">
                      <span class="footer-info-icon">
-                        <img src="<?=$baseurl?>/<?=$data["icon"]; ?>" />
+                        <img src="<?=$baseurl?>/assets/i/<?=$data["icon"]?>.png" />
                      </span>
-                    <span><?=$data["data"]; ?></span>
+                    <span class="footer-info-txt"><?=$data["data"]?></span>
                 </div>
-                <?php };?>
+                <?php }?>
             </div>
 
 
@@ -21,14 +21,14 @@
         <?php for($item=0; $item<count($params["footer-data"]); ++$item){
             if($params["footer-data"][$item] == end($params["footer-data"])) {?>
                 <div class="footer-info-block">
-                    <h6 class="footer-section-title"><?= $params["footer-data"][$item]["title"]; ?></h6>
+                    <h6 class="footer-section-title"><?=$params["footer-data"][$item]["title"]?></h6>
                     <div class="">
 
                         <?php for($i=0; $i<count($params["footer-data"][$item]["items"]); ++$i) {?>
                             <div class="footer-info footer-section-item">
                                 <a class="footer-section-item-link" href="#"><?= $params["footer-data"][$item]["items"][$i]; ?></a>
                             </div>
-                        <?php }; ?>
+                        <?php }?>
 
                     </div>
                 </div>
@@ -51,7 +51,7 @@
         <?php }}; ?>
 
     </div>
-    <div id="copy-right-block" class="red-bg">
+    <div id="copy-right-block">
         <div id="copy-right-info-block" class="content">
             <span>&copy; <?= TITLE; ?>, <?= date("Y"); ?></span>
             <div id="development-info">

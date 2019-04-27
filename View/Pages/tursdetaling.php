@@ -26,30 +26,33 @@
                     <?php } ?>
                 </div>
             </div>
+
             <div id="search-tours">
-                <?php foreach($params["search-tours"] as $tour) {?>
-                    <div class="tour-item tour-item-without-title-block tour-item-borde search-tour-item">
-                        <a class="tour-info-link absolute-tour-info-link" href="<?=$baseurl?>/tours/cats/item/<?= $tour["country"]?>">
-                            <div class="tour-item-img-block">
-                                <img class="tour-item-img" src="<?=$baseurl?>/<?= $tour["img"]?>" alt="<?= $tour["country"]; ?>" />
+                <?php for($hotTour=0; $hotTour<count($params["hot-tours"]); ++$hotTour) {?>
+                    <div class="tour-item tour-item-with-title-block tour-item-border search-tour-item">
+                        <a class="tour-info-link absolute-tour-info-link" href="#">
+                            <div class="tour-item-long-img-block">
+                                <img class="tour-item-img" src="<?=$baseurl?>/assets/img/<?=$params["hot-tours"][$hotTour]["img"]?>.jpg" alt="<?= $params["hot-tours"][$hotTour]["country"]; ?>" />
                             </div>
                             <div class="tour-item-info-block">
-                                <h3 class="tour-item-info-title"><?=$tour["country"]?></h3>
-                                <p class="tour-departure">Вылет: <?=$tour["departure"]?></p>
+                                <h3 class="tour-item-info-title"><?=$params["hot-tours"][$hotTour]["country"]?></h3>
+                                <p class="tour-departure">Вылет: <?=$params["hot-tours"][$hotTour]["departure"]?></p>
                                 <p class="tour-info">
                                     <img class="time-icon" src="<?=$baseurl?>/assets/img/clock-circular-outline.png" alt="Time">
-                                    <?=$tour["nights"]?> ночей
-                                    <?=$tour["days"]?> дней
+                                    <?=$params["hot-tours"][$hotTour]["nights"]?> ночей
+                                    <?=$params["hot-tours"][$hotTour]["days"]?> дней
                                 </p>
                                 <div class="get-tour-block">
-                                    <p class="tour-prise search-tour-prise"><span class="price-txt">Цена: </span><?= $tour["price"]; ?>
-                                        <img src="<?=$baseurl?>/assets/img/kz-currency.png">
+                                    <button class="blue-bg btn-style hot-tour-btn">Купить</button>
+                                    <p class="tour-prise"><?= $params["hot-tours"][$hotTour]["price"]?>
+                                        <img src="<?=$baseurl?>/assets/i/kz-currency.png">
                                     </p>
                                 </div>
                             </div>
                         </a>
                     </div>
-                <?php  }?>
+                <?php }?>
+
                 <div class="btn-block">
                     <button class="bordered-btn">Показать остальные</button>
                 </div>
