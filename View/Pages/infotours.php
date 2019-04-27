@@ -1,13 +1,14 @@
 <section id="tour-details-container" class="main-content">
     <div class="content">
+        <p class="navigation">Главная / Туры по Казахстану / <span>Название тура</span></p>
+        <p id="tour-name-title">Название тура</p>
+        <p class="tour-info">
+            <img class="time-icon" src="<?=$baseurl?>/assets/i/clock-circular-outline.png" alt="Time">
+            5 ночей
+            4 дней
+        </p>
         <div class="flex-container clear">
             <div class="tour-details-block">
-                <p id="tour-name-title">Название тура</p>
-                <p class="tour-info">
-                    <img class="time-icon" src="<?=$baseurl?>/assets/i/clock-circular-outline.png" alt="Time">
-                    5 ночей
-                    4 дней
-                </p>
                 <div class="slideshow">
                     <div class="slideshow-main-img-block clear">
                         <img class="slideshow-main-img" src="<?=$baseurl?>/assets/img/almaty.jpg" />

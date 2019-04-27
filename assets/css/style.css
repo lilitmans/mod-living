@@ -852,9 +852,13 @@ margin-bottom: 60px;
 }
 
 .navigation {
-    color: #aaaaaa;
-    font-size: 14px;
+    color: #8E8E8E;
+    font-size: 18px;
     margin: 20px 0;
+}
+
+.navigation>span {
+    color: #485867;
 }
 
 .sidebar-menu-list {
@@ -979,7 +983,6 @@ margin-bottom: 60px;
 .tour-details-side-bar-menu {
     padding: 10px;
     height: auto;
-    margin-top: 92px;
 }
 
 .tour-details-price-block {
