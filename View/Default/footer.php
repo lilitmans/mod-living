@@ -1,62 +1,46 @@
 <footer>
-    <div id="footer-info-main-container" class="content">
-        <div id="company-info" class="footer-info-block">
-            <div id="footer-logo-block">
-                <img class="logo" src="<?=$baseurl?>/assets/i/logo.png" alt="Logo"/>
+    <div class="content">
+        <div id="footer_top_part" class="flexbox">
+            <div id="footer_navigation_block">
+                <ul class="flexbox">
+                    <li>
+                        <a class="" href="<?php $baseurl?>/">Home</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'store' ? 'active-nav':''?>" href="<?php $baseurl?>/store">Our store</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'returnpolicy' ? 'active-nav':''?>" href="<?php $baseurl?>/returnpolicy">Return policy</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'about' ? 'active-nav':''?>" href="<?php $baseurl?>/about">About us</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'paymentoptions' ? 'active-nav':''?>" href="<?php $baseurl?>/paymentoptions">Payment options</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'customerservice' ? 'active-nav':''?>" href="<?php $baseurl?>/customerservice">Customer service</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'shippinginformation' ? 'active-nav':''?>" href="<?php $baseurl?>/shippinginformation">Shipping information</a>
+                    </li>
+                    <li>
+                        <a class="<?=$url[1] == 'contact' ? 'active-nav':''?>" href="<?php $baseurl?>/contact">Contact us</a>
+                    </li>
+                </ul>
             </div>
-            <div class="footer-info">
-                <?php foreach ($params["footer-company-data"] as $data){?>
-                <div class="footer-info-str">
-                     <span class="footer-info-icon">
-                        <img src="<?=$baseurl?>/assets/i/<?=$data["icon"]?>.png" />
-                     </span>
-                    <span class="footer-info-txt"><?=$data["data"]?></span>
-                </div>
-                <?php }?>
+            <div id="media_block" class="flexbox">
+                <a class="flexbox" href="#"><i class="fa fa-behance"></i></a>
+                <a class="flexbox" href="#"><i class="fa fa-vk"></i></a>
+                <a class="flexbox" href="#"><i class="fa fa-instagram"></i></a>
+                <a class="flexbox" href="#"><i class="fa fa-facebook"></i></a>
             </div>
-
-
         </div>
 
-        <?php for($item=0; $item<count($params["footer-data"]); ++$item){
-            if($params["footer-data"][$item] == end($params["footer-data"])) {?>
-                <div class="footer-info-block">
-                    <h6 class="footer-section-title"><?=$params["footer-data"][$item]["title"]?></h6>
-                    <div class="">
-
-                        <?php for($i=0; $i<count($params["footer-data"][$item]["items"]); ++$i) {?>
-                            <div class="footer-info footer-section-item">
-                                <a class="footer-section-item-link" href="#"><?= $params["footer-data"][$item]["items"][$i]; ?></a>
-                            </div>
-                        <?php }?>
-
-                    </div>
-                </div>
-            <?php }else { ?>
-                <div class="footer-info-block">
-                    <h6 class="footer-section-title"><?= $params["footer-data"][$item]["title"]; ?></h6>
-                    <div class="">
-
-                        <?php for($i=0; $i<count($params["footer-data"][$item]["items"]); ++$i) {?>
-                            <div class="footer-info footer-section-item">
-                                <a class="footer-section-item-link" href="#"><?= $params["footer-data"][$item]["items"][$i]; ?></a>
-                            </div>
-                        <?php }; ?>
-
-                    </div>
-                    <div class="footer-info footer-section-all-items">
-                        <a class="footer-section-all-items-link" href="#">Все <?=$params["footer-data"][$item]["see-all"]; ?></a>
-                    </div>
-                </div>
-        <?php }}; ?>
-
-    </div>
-    <div id="copy-right-block">
-        <div id="copy-right-info-block" class="content">
-            <span>&copy; <?= TITLE; ?>, <?= date("Y"); ?></span>
-            <div id="development-info">
-                <p>Дизайн и Разработка сайта : STUDIO NOMAD</p>
-            </div>
+        <div id="footer_bottom_part" class="flexbox">
+            <p>&copy; <?= TITLE ?> <?= date('Y')?></p>
+            <a href="#">Private police</a>
+            <p><?= date('Y')?></p>
         </div>
     </div>
 </footer>

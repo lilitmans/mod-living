@@ -88,7 +88,7 @@ CKFinder.lang['hu'] =
 	DestinationFile	: 'Cél fájl',
 	SkippedFiles	: 'A kihagyott fájlok listája:',
 
-	// Basket
+	// Card
 	BasketFolder		: 'Kosár',
 	BasketClear			: 'Kosár ürítése',
 	BasketRemove		: 'Törlés a kosárból',

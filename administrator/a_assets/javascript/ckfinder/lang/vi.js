@@ -88,7 +88,7 @@ CKFinder.lang['vi'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Rổ',
 	BasketClear			: 'Dọn rổ',
 	BasketRemove		: 'Xóa khỏi rổ',

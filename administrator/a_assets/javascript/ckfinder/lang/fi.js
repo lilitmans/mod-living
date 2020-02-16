@@ -89,7 +89,7 @@ CKFinder.lang['fi'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Kori',
 	BasketClear			: 'Tyhjennä kori',
 	BasketRemove		: 'Poista korista',

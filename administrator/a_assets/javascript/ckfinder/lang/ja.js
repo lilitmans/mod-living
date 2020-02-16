@@ -88,8 +88,8 @@ CKFinder.lang['ja'] =
 	DestinationFile	: '適用するファイル',
 	SkippedFiles	: 'スキップしたファイルのリスト:',
 
-	// Basket
-	BasketFolder		: 'Basket',
+	// Card
+	BasketFolder		: 'Card',
 	BasketClear			: 'バスケットを空にする',
 	BasketRemove		: 'バスケットから削除',
 	BasketOpenFolder	: '親フォルダを開く',

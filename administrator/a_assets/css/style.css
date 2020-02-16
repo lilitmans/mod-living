@@ -2,7 +2,7 @@
 body{
     margin:0px;
     font-family: 'Source Sans Pro','Helvetica Neue',Helvetica,Arial,sans-serif;
-    background-color: #E6E7EB;
+    background-color: white;
     overflow-x:hidden;
 }
 ul{
@@ -351,11 +351,11 @@ a.logo {
     padding: 0 15px;
     font-weight: 300;
     overflow: hidden;
-    background-color: #222d32;
+    background-color: #662EFF;
     color: #fff;
     border-bottom: 0 solid transparent;
     box-sizing: border-box;
-    padding-top: 34px;
+    padding: 20px 15px;
 }
 .main_not_menu{
     margin:0;
@@ -727,7 +727,7 @@ div#menu {
     -moz-transition: -moz-transform .3s ease-in-out,width .3s ease-in-out;
     -o-transition: -o-transform .3s ease-in-out,width .3s ease-in-out;
     transition: transform .3s ease-in-out,width .3s ease-in-out;
-    background-color: #222d32;
+    background-color: #1B0744;
 }
 .user_panel {
     position: relative;
@@ -761,16 +761,17 @@ div#menu {
     color: #3c763d;
 }
 ul.sidebar-menu li.header {
-    color: #1386B9;
-    background: #1a2226;
+    color: #1C0B43;
+    background: white;
     padding: 10px 25px 10px 15px;
-    font-size: 12px;
+    font-size: 16px;
     border: none;
+    border-radius: 0;
     font-weight: bold;
 }
 ul.sidebar-menu li a,ul.sidebar-menu li.menuli{
     border-left: 3px solid transparent;
-    color: #b8c7ce;
+    color: white;
     padding: 12px 5px 0px 30px;
     display: block;
     position: relative;
@@ -1387,7 +1388,7 @@ video.video_upload {
     font-weight: bold;
 }
 #table_div a.paginate_button.current {
-    background: #42C9F5;
+    background: #662EEF;
     color: #ffff !important;
     width: 40px;
     height: 40px;
@@ -1899,7 +1900,6 @@ ul.sidebar-menu li a.none_all_pad_m{
     vertical-align: middle;
 }
 .logo_tx{
-    margin-left: 15px;
     font-size: 32px;
 }
 .slect_filtr_bl .chosen-container-single .chosen-single {
@@ -2071,8 +2071,8 @@ li.filtr_li label,li.filtr_li input{
     justify-content: flex-end;
 }
 .action_button > a > button {
-    background: #42C9F5;
-    border: 1px solid #42C9F5;
+    background: #662EFF;
+    border: 1px solid #662EFF;
     color: #fff;
     padding: 5px 20px;
     border-radius: 3px;
@@ -2080,8 +2080,8 @@ li.filtr_li label,li.filtr_li input{
     transition: 0.4s;
 }
 .action_button > a > button:hover{
-    background: #1779b9;
-    border: 1px solid #1779b9;
+    background: #4105E5;
+    border: 1px solid #4105E5;
 }
 .user_information{
     padding-left: 30px;
@@ -2103,8 +2103,8 @@ li.filtr_li label,li.filtr_li input{
     justify-content: flex-end;
 }
 .remove_s >  button {
-    background: #f32d2d;
-    border: 1px solid #f32d2d;
+    background: #1B0744;
+    border: 1px solid #1B0744;
     color: #fff;
     padding: 5px 20px;
     border-radius: 3px;
@@ -2112,13 +2112,13 @@ li.filtr_li label,li.filtr_li input{
     transition: 0.4s;
 }
 .remove_s >  button:hover{
-    background: #cc1919;
-    border: 1px solid #cc1919;
+    background: #483274;
+    border: 1px solid #483274;
 }
 .group_page{
     display: flex;
     flex-direction: row;
-    background: #222d32bf;
+    background: #1B0744;
     color: #fff;
     padding-left: 15px;
     padding-right: 15px;
@@ -2134,13 +2134,13 @@ li.filtr_li label,li.filtr_li input{
     justify-content: flex-end;
 }
 .action_add_cat{
-    background: #42C9F5;
-    border: 1px solid #42C9F5;
+    background: #662EFF;
+    border: 1px solid #662EFF;
     width: 200px;
     height: 40px;
     color: #fff
 }
 .action_add_cat:hover{
-    background: #1779b9;
-    border: 1px solid #1779b9;
+    background: #4105E5;
+    border: 1px solid #4105E5;
 }

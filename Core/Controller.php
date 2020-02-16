@@ -13,7 +13,7 @@ Class Controller implements renders{
     protected $model;
     protected $ajaxResponse = array("error"=>false);
     protected $result = array();
-    protected $refererUrl = array('event.ec','www.event.ec','www.event.am','event.am');
+    protected $refererUrl = array('mod1living.com','www.mod1living.com','mod1living');
     protected $lastId;
     protected $_globalGet = array();
     protected $_post = array();
@@ -21,9 +21,9 @@ Class Controller implements renders{
     protected $bagCount;
     protected $likeCount;
     public $seo = array(
-                        'title'=>'Detour.kz',
-                        'desc'=>'Detour',
-                        'key'=>'Detour'
+                        'title'=>'mod1living.com',
+                        'desc'=>'Mod1living',
+                        'key'=>'Mod1living'
                  );
     protected $CatsArray = array();
 

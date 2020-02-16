@@ -88,7 +88,7 @@ CKFinder.lang['cy'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Basged',
 	BasketClear			: 'Clirio\'r Fasged',
 	BasketRemove		: 'Tynnu o\'r Fasged',

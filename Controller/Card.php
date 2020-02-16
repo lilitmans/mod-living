@@ -4,14 +4,14 @@ use Core\Controller as BaseController;
 use Model\Contact as ContactModel;
 
 
-class Cart extends BaseController
+class Card extends BaseController
 {
 
     public function __construct($route, $countRoute)
     {
         parent::__construct();
         if ($_SERVER['REQUEST_METHOD'] == 'GET') {
-            if ($countRoute == 1 && $route[0] == 'cart') {
+            if ($countRoute == 1 && $route[0] == 'card') {
                 $this->index();
             }
         }
@@ -20,6 +20,6 @@ class Cart extends BaseController
 
     public function index(){
 
-        $this->renderView("Pages/cart", "cart", $this->result);
+        $this->renderView("Pages/card", "card", $this->result);
     }
 }

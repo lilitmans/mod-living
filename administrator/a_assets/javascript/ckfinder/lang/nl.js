@@ -88,7 +88,7 @@ CKFinder.lang['nl'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Mandje',
 	BasketClear			: 'Mandje legen',
 	BasketRemove		: 'Verwijder uit het mandje',

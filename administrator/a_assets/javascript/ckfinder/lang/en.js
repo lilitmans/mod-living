@@ -88,17 +88,17 @@ CKFinder.lang['en'] =
 	DestinationFile	: 'Destination File',
 	SkippedFiles	: 'List of skipped files:',
 
-	// Basket
-	BasketFolder		: 'Basket',
-	BasketClear			: 'Clear Basket',
-	BasketRemove		: 'Remove from Basket',
+	// Card
+	BasketFolder		: 'Card',
+	BasketClear			: 'Clear Card',
+	BasketRemove		: 'Remove from Card',
 	BasketOpenFolder	: 'Open Parent Folder',
 	BasketTruncateConfirm : 'Do you really want to remove all files from the basket?',
 	BasketRemoveConfirm	: 'Do you really want to remove the file "%1" from the basket?',
 	BasketRemoveConfirmMultiple	: 'Do you really want to remove %1 files from the basket?',
 	BasketEmpty			: 'No files in the basket, drag and drop some.',
-	BasketCopyFilesHere	: 'Copy Files from Basket',
-	BasketMoveFilesHere	: 'Move Files from Basket',
+	BasketCopyFilesHere	: 'Copy Files from Card',
+	BasketMoveFilesHere	: 'Move Files from Card',
 
 	// Global messages
 	OperationCompletedSuccess	: 'Operation completed successfully.',

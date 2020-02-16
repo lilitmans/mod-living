@@ -88,7 +88,7 @@ CKFinder.lang['ro'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Coș',
 	BasketClear			: 'Golește coș',
 	BasketRemove		: 'Elimină din coș',

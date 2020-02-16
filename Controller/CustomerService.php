@@ -1,15 +1,25 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: HAYK
- * Date: 14.05.2019
- * Time: 16:53
- */
-
 namespace Controller;
+use Core\Controller as BaseController;
+use Model\Contact as ContactModel;
 
 
-class CustomerService
+class CustomerService extends BaseController
 {
 
+    public function __construct($route, $countRoute)
+    {
+        parent::__construct();
+        if ($_SERVER['REQUEST_METHOD'] == 'GET') {
+            if ($countRoute == 1 && $route[0] == 'customerservice') {
+                $this->index();
+            }
+        }
+
+    }
+
+    public function index(){
+
+        $this->renderView("Pages/customerservice", "customerservice", $this->result);
+    }
 }

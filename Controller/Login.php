@@ -1,15 +1,27 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: HAYK
- * Date: 14.05.2019
- * Time: 22:39
- */
-
 namespace Controller;
+use Core\Controller as BaseController;
 
 
-class Login
-{
 
+class Login extends BaseController{
+
+    public function __construct($route, $countRoute)
+    {
+        parent::__construct();
+        if($_SERVER['REQUEST_METHOD'] == 'GET') {
+            if ($countRoute == 1 && $route[0] == 'login') {
+                $this->index();
+            }
+        }
+
+        if($_SERVER['REQUEST_METHOD'] == 'POST'){
+
+        }
+    }
+
+    public function index()
+    {
+        $this->renderView("Pages/login","login", $this->result);
+    }
 }

@@ -88,7 +88,7 @@ CKFinder.lang['eo'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Rubujo',
 	BasketClear			: 'Malplenigi la rubujon',
 	BasketRemove		: 'Repreni el la rubujo',

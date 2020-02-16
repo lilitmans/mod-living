@@ -88,7 +88,7 @@ CKFinder.lang['es-mx'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Cesta',
 	BasketClear			: 'Vaciar cesta',
 	BasketRemove		: 'Quitar de la cesta',

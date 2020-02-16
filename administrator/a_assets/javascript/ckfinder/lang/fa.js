@@ -88,7 +88,7 @@ CKFinder.lang['fa'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'سبد',
 	BasketClear			: 'پاک کردن سبد',
 	BasketRemove		: 'حذف از سبد',

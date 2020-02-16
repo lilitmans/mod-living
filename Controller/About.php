@@ -6,7 +6,7 @@ use Core\Controller as BaseController;
 
 class About extends BaseController{
 
-    public function __construct($route , $countRoute)
+    public function __construct($route, $countRoute)
     {
         parent::__construct();
         if($_SERVER['REQUEST_METHOD'] == 'GET') {

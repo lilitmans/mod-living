@@ -88,7 +88,7 @@ CKFinder.lang['pl'] =
 	DestinationFile	: 'Plik docelowy',
 	SkippedFiles	: 'Lista pominiętych plików:',
 
-	// Basket
+	// Card
 	BasketFolder		: 'Koszyk',
 	BasketClear			: 'Wyczyść koszyk',
 	BasketRemove		: 'Usuń z koszyka',

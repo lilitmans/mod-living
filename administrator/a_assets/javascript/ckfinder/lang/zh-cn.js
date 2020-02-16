@@ -88,7 +88,7 @@ CKFinder.lang['zh-cn'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: '临时文件夹',
 	BasketClear			: '清空临时文件夹',
 	BasketRemove		: '从临时文件夹移除',

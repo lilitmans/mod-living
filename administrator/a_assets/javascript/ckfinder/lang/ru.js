@@ -88,7 +88,7 @@ CKFinder.lang['ru'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Корзина',
 	BasketClear			: 'Очистить корзину',
 	BasketRemove		: 'Убрать из корзины',

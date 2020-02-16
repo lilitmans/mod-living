@@ -6,7 +6,7 @@ use PDO as PDO;
 class Model implements ImplimentFace\QueryRequest{
 
     private $host = "127.0.0.1";
-    private $dbName = "tours";
+    private $dbName = "mod1living";
     private $dbPass = "";
     private $dbUser = "root";
     protected $db;

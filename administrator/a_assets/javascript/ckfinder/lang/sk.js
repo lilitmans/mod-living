@@ -88,7 +88,7 @@ CKFinder.lang['sk'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'Košík',
 	BasketClear			: 'Vyprázdniť košík',
 	BasketRemove		: 'Odstrániť z košíka',

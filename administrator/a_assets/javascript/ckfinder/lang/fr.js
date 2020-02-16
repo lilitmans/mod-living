@@ -88,7 +88,7 @@ CKFinder.lang['fr'] =
 	DestinationFile	: 'Fichier de destination',
 	SkippedFiles	: 'Liste des fichiers ignorés : ',
 
-	// Basket
+	// Card
 	BasketFolder		: 'Corbeille',
 	BasketClear			: 'Vider la corbeille',
 	BasketRemove		: 'Retirer de la corbeille',

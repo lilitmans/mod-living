@@ -88,7 +88,7 @@ CKFinder.lang['ca'] =
 	DestinationFile	: 'Fitxer de destinació',
 	SkippedFiles	: 'Llista dels fitxers omesos:',
 
-	// Basket
+	// Card
 	BasketFolder		: 'Cistella',
 	BasketClear			: 'Buidar la cistella',
 	BasketRemove		: 'Treure de la cistella',

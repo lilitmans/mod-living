@@ -6,7 +6,7 @@
         <link rel = "stylesheet" type = "text/css" href = "<?= $baseurl ?>/a_assets/css/font-awesome.min.css">
     </head>
     <body>
-        <div id='mainForm'>
+        <div id='mainForm' class="box-shadow">
             <div class="log_head">
                 <p class="log_logo"><img class="inline_head_log" src="<?= $baseurl ?>/a_assets/images/front/Vector.png" alt=""></p>
                 <p class="log_title">Welcome</p>

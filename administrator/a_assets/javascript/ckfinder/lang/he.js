@@ -88,7 +88,7 @@ CKFinder.lang['he'] =
 	DestinationFile	: 'קובץ יעד',
 	SkippedFiles	: 'רשימת קבצים שדולגו:',
 
-	// Basket
+	// Card
 	BasketFolder		: 'סל קבצים',
 	BasketClear			: 'ניקוי סל הקבצים',
 	BasketRemove		: 'מחיקה מסל הקבצים',

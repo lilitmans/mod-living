@@ -88,7 +88,7 @@ CKFinder.lang['gu'] =
 	DestinationFile	: 'Destination File', // MISSING
 	SkippedFiles	: 'List of skipped files:', // MISSING
 
-	// Basket
+	// Card
 	BasketFolder		: 'બાસ્કેટ',
 	BasketClear			: 'બાસ્કેટ ખાલી કરવી',
 	BasketRemove		: 'બાસ્કેટ માં થી કાઢી નાખવું',
